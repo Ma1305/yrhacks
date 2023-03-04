@@ -1,0 +1,320 @@
+/****************** HOME PAGE LAYOUT *************************/
+.post-card {
+    margin: 16px 0 16px 0;
+    position: relative;
+    overflow-y: hidden;
+    max-height: 600px;
+}
+
+.see-more-wrapper {
+    background-color: inherit;
+    position: absolute;
+    bottom: 0;
+    padding: 4px 0;
+    margin-left: -16px;
+    width: 100%;
+}
+
+#home-container {
+    margin: 16px 0;
+}
+
+#home-container.home1 {
+    min-height: 80vh;
+}
+
+#home {
+    position: relative;
+    padding: 16px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#home-container.home1 #home {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.homepage-layout-img {
+    border: solid black 3px;
+    max-width: calc(100% - 6px);
+    margin: 3px;
+}
+
+/****************** PROBLEM PAGE LAYOUT **********************/
+.flag-submit {
+    width: 90%;
+    display: inline;
+}
+
+.problem-submit-button {
+    width: 100%;
+}
+
+#hint {
+    overflow-x: auto;
+    margin-top: 8px;
+}
+
+#category-selector {
+    display: inline-block!important;
+    width: auto!important;
+}
+
+#category-selector-container {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+    #category-selector-container {
+        float: right;
+    }
+}
+
+#problem-description {
+    overflow-x: auto;
+    position: relative;
+}
+
+/****************** CONTEST PAGE LAYOUT **********************/
+#contest-description-container, #contest-description-container-keep-open {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(0, 0, 0, 0.7);
+     top: 0;
+     left: 0;
+}
+
+#contest-problem-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 320px;
+    padding: 16px;
+}
+
+#contest-description-close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+/****************** ADMIN PAGE LAYOUT **********************/
+.admin-card {
+    padding: calc(var(--bs-gutter-x)/ 2);
+}
+
+.admin-card:hover {
+    filter: drop-shadow(6px 6px 4px #dfdfdf);
+}
+
+.dark .admin-card:hover {
+    filter: drop-shadow(6px 6px 4px #444444);
+}
+
+.user-ban {
+    color: red;
+}
+
+.user-admin {
+    font-weight: bold;
+}
+
+/****************** MD LIVE PREVIEW **************************/
+textarea.md-preview {
+    min-height: 400px;
+    margin-right: 1%;
+    flex: 1;
+}
+div.md-preview {
+    flex: 1;
+    overflow-x: auto;
+    min-width: 0px;
+    height: fit-content;
+}
+
+/****************** MISC DISPLAY FIXES ***********************/
+.font-mono {
+    font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Ubuntu Mono", "Roboto Mono", Menlo, Monaco, Consolas, monospace;
+    font-size: 14px;
+}
+
+.table-full-width {
+    min-width: 450px;
+}
+
+.card {
+    padding: 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+@media screen and (min-width: 991px) {
+    .flex-desktop {
+        display: flex;
+    }
+}
+
+.icon {
+    width: 16px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+main {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    flex-grow: 1;
+}
+
+td {
+    word-break: break-word;
+}
+
+.pagination {
+    overflow-x: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.toggle-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.toggle-input > div {
+    display: inline-flex;
+}
+
+.toggle-input > div > span:first-child {
+    padding-right: 8px;
+}
+
+/****************** COLOURS **********************************/
+.white {
+    color: #ffffff!important;
+}
+
+.black {
+    color: #000000!important;
+}
+
+.svg-red {
+    filter: invert(16%) sepia(100%) saturate(6752%) hue-rotate(1deg) brightness(99%) contrast(117%);
+}
+
+.svg-green {
+    filter: invert(57%) sepia(58%) saturate(3606%) hue-rotate(83deg) brightness(118%) contrast(125%);
+}
+
+.bg-ld-green {
+    background-color: #eeffee!important;
+}
+
+.bg-ld-red {
+    background-color: #ffeeee!important;
+}
+
+.bg-ld-purple {
+    background-color: #eeeeff!important;
+}
+
+.bg-ld-blue {
+    background-color: #ddeeff!important;
+}
+
+.dark .bg-ld-green {
+    background-color: #2f3f2f!important;
+}
+
+.dark .bg-ld-red {
+    background-color: #3f2f2f!important;
+}
+
+.dark .bg-ld-purple {
+    background-color: #2f2f3f!important;
+}
+
+.dark .bg-ld-blue {
+    background-color: #1f2f3f!important;
+}
+
+/****************** DARK MODE ********************************/
+.dark {
+    background: #2f2f2f;
+    background-color: #2f2f2f;
+    color: #fff;
+}
+
+.dark .card {
+    border: 1px solid rgba(255, 255, 255, .125);
+    background-color: #2f2f2f;
+}
+
+.dark .form-control, .dark .form-control:focus, .dark tr {
+    background-color: #2f2f2f;
+    color: #fff;
+}
+
+.dark tr:hover, .dark .navbar-dark .navbar-brand {
+    color: #fff!important;
+}
+
+.dark .page-link {
+    background-color: #2f2f2f!important;
+}
+
+.dark .page-item.active .page-link {
+    background-color: #0d6efd!important;
+}
+
+.dark-toggle:checked {
+    background-color: #2f2f2f;
+}
+
+.dark-toggle {
+    margin-left: 0!important;
+}
+
+.dark .form-select {
+    background-image: url("data:image/svg+xml,<svg style='filter: invert(100%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>")
+}
+
+
+#hint-container {
+    display: none;
+    margin-top: 16px;
+}
+
+.dark a:not(.btn) {
+    color: #3388ff;
+}
+
+.dark a.dropdown-item {
+    color: black;
+}
+
+.dark .form-control:disabled, .dark .form-control[readonly] {
+    background-color: #3f3f3f;
+}

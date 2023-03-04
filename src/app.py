@@ -28,7 +28,13 @@ Session(app)
 mail = Mail(app)
 
 
-# validate_email(mail)
+validate_email(mail)
+
+
+# pass variables to all templates
+@app.context_processor
+def inject_user():
+    return dict(WEB_NAME=WEB_NAME)
 
 
 @app.route("/")

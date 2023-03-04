@@ -1,6 +1,9 @@
-<html>
-<head></head>
-<body>
+{% extends "layout.html" %}
+
+{% block title %}Login{% endblock %}
+{% block active %}Login{% endblock %}
+
+{% block main %}
 <div id="login-portal">
     <h1>Login</h1>
     <form method="post">
@@ -16,5 +19,4 @@
         <input type="submit" value="Submit">
     </form>
 </div>
-</body>
-</html>
+{% endblock %}

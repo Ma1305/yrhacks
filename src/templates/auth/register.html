@@ -1,6 +1,9 @@
-<html>
-<head></head>
-<body>
+{% extends "layout.html" %}
+
+{% block title %}Login{% endblock %}
+{% block active %}Login{% endblock %}
+
+{% block main %}
 <div id="registration-portal">
     <h1>Create a New Account</h1>
     <form method="post">
@@ -27,5 +30,4 @@
         <input type="submit" value="Submit">
     </form>
 </div>
-</body>
-</html>
+{% endblock %}
