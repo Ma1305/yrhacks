@@ -1326,3 +1326,14 @@ with app.app_context(). See the documentation for more information.
 2023-03-04 05:48:52,007 INFO werkzeug Thread-32 : 127.0.0.1 - - [04/Mar/2023 05:48:52] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
 2023-03-04 05:48:52,009 INFO werkzeug Thread-33 : 127.0.0.1 - - [04/Mar/2023 05:48:52] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
 2023-03-04 05:48:52,009 INFO werkzeug Thread-34 : 127.0.0.1 - - [04/Mar/2023 05:48:52] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 06:07:38,790 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 06:07:38,807 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 06:07:38,807 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 06:07:38,808 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 06:07:41,044 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 06:07:41,056 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 06:07:41,067 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 06:07:41,604 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 06:07:41] "GET / HTTP/1.1" 200 -
+2023-03-04 06:07:42,797 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 06:07:42] "GET / HTTP/1.1" 200 -
+2023-03-04 06:07:52,811 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 06:07:52] "GET / HTTP/1.1" 200 -
