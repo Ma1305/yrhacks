@@ -22,6 +22,10 @@ def login_required(f):
     return decorated_function
 
 
+def teach_assist_login_required(f):
+    pass
+
+
 # three possible codes: 1 good, -1 no exist, -2 wrong password, -3 not verified
 def check_login(rows):
     # check if user exists

@@ -144,7 +144,7 @@ def register():
     return render_template("auth/register.html")
 
 
-@app.route('/confirmregister/<token>')
+@app.route("/confirmregister/<token>")
 def confirm_register(token):
     try:
         token = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
@@ -183,7 +183,7 @@ def confirm_register(token):
     return redirect("/")
 
 
-@app.route('/cancelregister/<token>')
+@app.route("/cancelregister/<token>")
 def cancel_register(token):
     try:
         token = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
@@ -206,6 +206,36 @@ def cancel_register(token):
                      f"IP {request.remote_addr}"))
 
     return redirect("/register")
+
+
+@app.route("/teach_assist_login", methods=["GET", "POST"])
+@login_required
+def teach_assist_login():
+    if request.method == "GET":
+        return render_template("auth/teach_assist_login.html")
+
+    # Reached using POST
+
+
+@app.route("/teach_assist_logout", methods=["POST"])
+def teach_assist_logout():
+    pass
+
+
+@app.route("/course_selection", methods=["GET", "POST"])
+@login_required
+def course_selection():
+    pass
+
+
+@app.route("/grades", methods=["GET", "POST"])
+@login_required
+@teach_assist_login_required
+def grades():
+    if request.method == "GET":
+        return render_template("grades.html")
+
+    # Reached using POST
 
 
 if __name__ == "__main__":
