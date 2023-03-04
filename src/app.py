@@ -246,7 +246,36 @@ def course_selection():
     courses = []
     # Check if there is a timetable
     if len(rows) > 0:
-        courses = rows[0]["courses"].split(", ")
+        temp_courses = rows[0]["courses"].split(", ")
+        [courses.append([]) for i in range(18)]
+        num = -2
+        for i in range(18):
+            num += 1
+            for j in range(4):
+                # Normal courses
+                if i < 10:
+                    courses[i].append(temp_courses[i*4][j])
+                elif i == 10 and j == 0:
+                    courses.append([])
+                    num = 0
+
+                # Summer courses
+                elif i < 13:
+                    courses[i].append(temp_courses[i*4][j])
+                elif i == 13 and j == 0:
+                    num = 0
+                    courses.append([])
+
+                # Night courses
+                elif i < 16:
+                    courses[i].append(temp_courses[i*4][j])
+                elif i == 16 and j == 0:
+                    courses.append([])
+                    num = 0
+
+                # Repertoire courses
+                else:
+                    courses[i].append(temp_courses[i*4][j])
 
     else:
         [courses.append([]) for i in range(18)]

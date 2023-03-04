@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html>
+{% extends "navbar.html" %}
 
-<head>
+{% block title %}Time Table{% endblock %}
+
+  {% block preload %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
     <link href="static/css/timetable.css" rel="stylesheet" type="text/css"/>
-</head>
+  {% endblock %}
 
-<body>
+{% block main %}
 <div class = "top-select">
   <h1>Timetable</h1>
   <h3>Course Update</h3><br>
@@ -505,4 +506,4 @@
   <br>
 <script src="static/js/timetable.js"></script>
 </body>
-</html>
+{% blockend %}
