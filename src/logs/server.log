@@ -132,3 +132,214 @@ with app.app_context(). See the documentation for more information.
 2023-03-04 01:58:56,472 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 01:58:56] "GET / HTTP/1.1" 200 -
 2023-03-04 01:58:56,632 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 01:58:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 2023-03-04 01:58:57,677 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 01:58:57] "GET /login HTTP/1.1" 200 -
+2023-03-04 02:08:24,218 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 02:08:24,230 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:08:24,230 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:08:24,231 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:08:26,420 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 02:08:26,441 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:08:26,501 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:08:27,988 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:08:27] "GET /login HTTP/1.1" 200 -
+2023-03-04 02:08:42,281 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:08:42] "[33mGET /INSERT%20LINK%20HERE?login-studentnum=3423&login-password=passd HTTP/1.1[0m" 404 -
+2023-03-04 02:11:19,258 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 02:11:19,270 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:11:19,270 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:11:19,271 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:11:21,594 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 02:11:21,601 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:11:21,611 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:11:26,238 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:11:26] "GET /login HTTP/1.1" 200 -
+2023-03-04 02:11:32,970 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:11:32] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2023-03-04 02:11:32,985 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 02:11:32] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-03-04 02:11:32,987 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 02:11:32] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-03-04 02:11:33,009 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 02:11:33] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-03-04 02:11:33,024 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 02:11:33] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 02:12:20,141 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:12:20,141 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:12:20,142 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:12:20,970 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:12:20,978 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:12:24,403 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:12:24] "GET /login HTTP/1.1" 200 -
+2023-03-04 02:12:30,425 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:12:30] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2023-03-04 02:12:30,434 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 02:12:30] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-04 02:12:30,436 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 02:12:30] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-04 02:12:30,449 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 02:12:30] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 02:12:30,459 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 02:12:30] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 02:13:28,930 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:13:28,930 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:13:28,931 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:13:29,696 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:13:29,702 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:13:36,695 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:13:36] "GET /login HTTP/1.1" 200 -
+2023-03-04 02:13:42,176 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:13:42] "POST /login HTTP/1.1" 200 -
+2023-03-04 02:27:15,809 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:27:15,809 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:27:15,811 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:27:16,543 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:27:16,549 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:27:21,475 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:27:21] "GET /login HTTP/1.1" 200 -
+2023-03-04 02:27:24,498 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:27:24] "GET /login HTTP/1.1" 200 -
+2023-03-04 02:33:21,470 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 02:33:21] "[33mGET /registration HTTP/1.1[0m" 404 -
+2023-03-04 02:33:26,430 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 02:33:26] "GET /register HTTP/1.1" 200 -
+2023-03-04 02:40:32,839 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:40:32,840 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:40:32,841 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:40:33,586 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:40:33,593 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:40:39,211 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:40:39] "GET /register HTTP/1.1" 200 -
+2023-03-04 02:41:01,960 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:41:01] "POST /register HTTP/1.1" 200 -
+2023-03-04 02:42:02,354 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:42:02,354 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:42:02,356 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:42:03,077 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:42:03,086 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:42:23,049 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:42:23] "POST /register HTTP/1.1" 200 -
+2023-03-04 02:43:44,642 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:43:44,642 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:43:44,643 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:43:45,378 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:43:45,384 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:44:02,420 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:44:02] "POST /register HTTP/1.1" 200 -
+2023-03-04 02:44:40,829 INFO werkzeug MainThread :  * Detected change in '/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py', reloading
+2023-03-04 02:44:40,965 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:44:42,900 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:44:42,924 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:44:43,390 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:44:43] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2023-03-04 02:44:43,442 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 02:44:43] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-03-04 02:44:43,450 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:44:43] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-03-04 02:44:43,473 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 02:44:43] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-03-04 02:44:43,487 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 02:44:43] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 02:51:17,583 INFO werkzeug MainThread :  * Detected change in '/Users/manifatemi/programing-projects/hackathon/yrhacks/src/helpers.py', reloading
+2023-03-04 02:51:17,704 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:51:19,862 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:51:19,932 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:57:23,923 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 02:57:23,924 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 02:57:23,925 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 02:57:24,681 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 02:57:24,687 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 02:57:42,462 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 02:57:42] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2023-03-04 02:57:42,477 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 02:57:42] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-04 02:57:42,478 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 02:57:42] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-04 02:57:42,492 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 02:57:42] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 02:57:42,507 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 02:57:42] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:05:10,990 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:05:10,990 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:05:10,991 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:05:11,728 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:05:11,735 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:05:39,787 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:05:39] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2023-03-04 03:06:33,057 INFO werkzeug MainThread :  * Detected change in '/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py', reloading
+2023-03-04 03:06:33,378 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:06:35,315 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:06:35,333 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:07:15,070 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:07:15,070 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:07:15,071 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:07:15,828 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:07:15,835 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:07:24,126 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:07:24] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2023-03-04 03:08:31,687 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:08:31,688 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:08:31,688 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:08:32,428 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:08:32,435 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:08:37,340 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:08:37] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2023-03-04 03:09:02,377 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 03:09:02] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2023-03-04 03:09:02,387 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 03:09:02] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-04 03:09:02,390 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 03:09:02] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-04 03:09:02,406 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 03:09:02] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:09:02,428 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 03:09:02] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:11:00,378 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:11:00,378 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:11:00,380 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:11:01,135 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:11:01,141 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:11:09,486 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:11:09] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:11:18,449 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 03:11:18] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2023-03-04 03:11:18,463 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 03:11:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-04 03:11:18,465 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 03:11:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-04 03:11:18,478 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 03:11:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:11:18,487 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 03:11:18] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:13:23,343 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:13:23,343 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:13:23,345 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:13:24,146 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:13:24,161 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:13:35,366 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:13:35] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2023-03-04 03:13:35,403 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 03:13:35] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-04 03:13:35,405 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 03:13:35] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-04 03:13:35,416 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 03:13:35] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:13:35,425 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 03:13:35] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:13:45,914 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:13:45,914 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:13:45,915 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:13:46,760 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:13:46,791 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:13:52,817 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:13:52] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2023-03-04 03:13:52,828 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 03:13:52] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-03-04 03:13:52,831 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 03:13:52] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-03-04 03:13:52,841 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 03:13:52] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:13:52,855 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 03:13:52] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:16:46,318 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:16:46,319 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:16:46,320 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:16:47,195 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:16:47,203 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:16:54,158 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:16:54] "[31m[1mPOST /register HTTP/1.1[0m" 409 -
+2023-03-04 03:19:02,210 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:19:02,210 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:19:02,211 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:19:02,940 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:19:02,948 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:19:14,793 INFO initial_setup Thread-2 : User Mani (Fatemi) with student number #349974477 has initiated a registration request, with IP 127.0.0.1
+2023-03-04 03:19:14,798 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:19:14] "POST /register HTTP/1.1" 200 -
+2023-03-04 03:20:23,205 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 03:20:23,205 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 03:20:23,206 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:20:24,008 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:20:24,017 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:20:27,108 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:20:27] "[35m[1mGET /cancelregister/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjM0OTk3NDQ3N0BnYXBwcy55cmRzYi5jYSIsImV4cGlyYXRpb24iOiIyMDIzLTAzLTA0VDA4OjQ5OjEyLjY5MDIyNiJ9.GkPv4FEdL_Or6IVZ5cZeXDUSPMANU-tdV4uhNBKJtdU HTTP/1.1[0m" 500 -
+2023-03-04 03:20:27,137 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 03:20:27] "GET /cancelregister/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjM0OTk3NDQ3N0BnYXBwcy55cmRzYi5jYSIsImV4cGlyYXRpb24iOiIyMDIzLTAzLTA0VDA4OjQ5OjEyLjY5MDIyNiJ9.GkPv4FEdL_Or6IVZ5cZeXDUSPMANU-tdV4uhNBKJtdU?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-03-04 03:20:27,138 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 03:20:27] "GET /cancelregister/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjM0OTk3NDQ3N0BnYXBwcy55cmRzYi5jYSIsImV4cGlyYXRpb24iOiIyMDIzLTAzLTA0VDA4OjQ5OjEyLjY5MDIyNiJ9.GkPv4FEdL_Or6IVZ5cZeXDUSPMANU-tdV4uhNBKJtdU?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-03-04 03:20:27,158 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 03:20:27] "GET /cancelregister/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjM0OTk3NDQ3N0BnYXBwcy55cmRzYi5jYSIsImV4cGlyYXRpb24iOiIyMDIzLTAzLTA0VDA4OjQ5OjEyLjY5MDIyNiJ9.GkPv4FEdL_Or6IVZ5cZeXDUSPMANU-tdV4uhNBKJtdU?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-03-04 03:20:27,192 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 03:20:27] "[36mGET /cancelregister/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjM0OTk3NDQ3N0BnYXBwcy55cmRzYi5jYSIsImV4cGlyYXRpb24iOiIyMDIzLTAzLTA0VDA4OjQ5OjEyLjY5MDIyNiJ9.GkPv4FEdL_Or6IVZ5cZeXDUSPMANU-tdV4uhNBKJtdU?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-03-04 03:21:13,709 INFO werkzeug MainThread :  * Detected change in '/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py', reloading
+2023-03-04 03:21:13,841 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 03:21:15,096 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 03:21:15,104 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 03:21:27,776 INFO initial_setup Thread-2 : Confirmation cancellation of student number 349974477  from IP 127.0.0.1
+2023-03-04 03:21:27,778 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 03:21:27] "[32mGET /cancelregister/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjM0OTk3NDQ3N0BnYXBwcy55cmRzYi5jYSIsImV4cGlyYXRpb24iOiIyMDIzLTAzLTA0VDA4OjQ5OjEyLjY5MDIyNiJ9.GkPv4FEdL_Or6IVZ5cZeXDUSPMANU-tdV4uhNBKJtdU HTTP/1.1[0m" 302 -
+2023-03-04 03:21:27,785 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 03:21:27] "GET /register HTTP/1.1" 200 -
+2023-03-04 03:21:27,813 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 03:21:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-04 03:21:54,533 INFO initial_setup Thread-5 : User Mani (Fatemi) with student number #349974477 has initiated a registration request, with IP 127.0.0.1
+2023-03-04 03:21:54,535 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 03:21:54] "POST /register HTTP/1.1" 200 -
+2023-03-04 03:22:19,825 INFO initial_setup Thread-7 : Registration confirmation for student number #349974477 from IP 127.0.0.1
+2023-03-04 03:22:19,827 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 03:22:19] "[32mGET /confirmregister/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjM0OTk3NDQ3N0BnYXBwcy55cmRzYi5jYSIsImV4cGlyYXRpb24iOiIyMDIzLTAzLTA0VDA4OjUxOjUyLjgzMTE4MSJ9.XNEDBr7nllrGTe8utmYoOjpOJg3gBRplZgaN1YZv1kE HTTP/1.1[0m" 302 -
+2023-03-04 03:22:19,832 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 03:22:19] "GET / HTTP/1.1" 200 -
+2023-03-04 03:22:28,796 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 03:22:28] "[33mGET /login.html HTTP/1.1[0m" 404 -
+2023-03-04 03:23:02,711 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 03:23:02] "[33mGET /login.html HTTP/1.1[0m" 404 -
+2023-03-04 03:23:10,779 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 03:23:10] "GET / HTTP/1.1" 200 -
+2023-03-04 03:23:12,731 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 03:23:12] "GET /login HTTP/1.1" 200 -
+2023-03-04 03:23:15,928 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 03:23:15] "GET /register HTTP/1.1" 200 -
+2023-03-04 03:23:21,293 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 03:23:21] "GET /login HTTP/1.1" 200 -
+2023-03-04 03:23:30,818 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 03:23:30] "POST /login HTTP/1.1" 200 -
+2023-03-04 03:24:16,764 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/Mar/2023 03:24:16] "GET /register HTTP/1.1" 200 -
