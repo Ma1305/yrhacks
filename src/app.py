@@ -250,10 +250,10 @@ def course_selection():
         [courses.append([]) for i in range(18)]
         num = 0
         for i in range(18):
+            num += 1
             for j in range(4):
                 # Normal courses
                 if i < 10:
-                    num += 1
                     courses[i].append(f"Course {num}")
                 elif i == 10 and j == 0:
                     courses.append([])
@@ -261,7 +261,6 @@ def course_selection():
 
                 # Summer courses
                 elif i < 13:
-                    num += 1
                     courses[i].append(f"Summer Course {num}")
                 elif i == 13 and j == 0:
                     num = 0
@@ -269,7 +268,6 @@ def course_selection():
 
                 # Night courses
                 elif i < 16:
-                    num += 1
                     courses[i].append(f"Night Course {num}")
                 elif i == 13 and j == 0:
                     courses.append([])
@@ -277,7 +275,6 @@ def course_selection():
 
                 # Repertoire courses
                 else:
-                    num += 1
                     courses[i].append(f"Repertoire Course {num}")
 
     logging.info(f"The following courses are begin passed to time table {str(courses)}")
