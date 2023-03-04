@@ -242,7 +242,7 @@ def teach_assist_logout():
 def course_selection():
     rows = db.execute("SELECT * FROM time_tables WHERE student_number=:student_number",
                       student_number=session["student_number"])
-
+    rows = []
     courses = []
     # Check if there is a timetable
     if len(rows) > 0:
