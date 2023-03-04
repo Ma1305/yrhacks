@@ -4,6 +4,7 @@ from functools import wraps
 from datetime import datetime, timedelta
 import re
 import jwt
+from werkzeug.security import check_password_hash
 
 
 def login_required(f):
@@ -27,14 +28,12 @@ def teach_assist_login_required(f):
 
 
 # three possible codes: 1 good, -1 no exist, -2 wrong password, -3 not verified
-def check_login(rows, logger=None):
-    '''if logger:
-        logger.info(f"login attempt to student number {request.form.get()})'''
+def check_login(rows):
     # check if user exists
     if len(rows) == 0:
         return -1
     # check for correct password
-    if rows[0]["password"] != request.form.get("login-password"):
+    if not check_password_hash(rows[0]["password"], request.form.get("login-password")):
         return -2
     # check if user is verified
     if not rows[0]["verified"]:
