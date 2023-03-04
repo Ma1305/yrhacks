@@ -2,32 +2,32 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-  <h1>Timetable</h1>
-  <h3>Course Update</h3><br>
-  <label>Course Type:</label>
-  <select id="coursetype" style="font-size: 16px;">
+<h1>Timetable</h1>
+<h3>Course Update</h3><br>
+<label>Course Type:</label>
+<select id="coursetype" style="font-size: 16px;">
     <option value="dayschool">Day School</option>
     <option value="summerschool">Summer School</option>
     <option value="nightschool">Night School</option>
     <option value="rep">After School</option>
-  </select>
-  <br>
-  <label>Grade:</label>
-  <select id="grade" style="font-size: 16px;">
+</select>
+<br>
+<label>Grade:</label>
+<select id="grade" style="font-size: 16px;">
     <option value=0>Grade 9</option>
     <option value=1>Grade 10</option>
     <option value=2>Grade 11</option>
     <option value=3>Grade 12</option>
-  </select>
-  <label>Course Block:</label>
-  <select id="courseblock" style="font-size: 16px;">
+</select>
+<label>Course Block:</label>
+<select id="courseblock" style="font-size: 16px;">
     <option value=1>Block 1</option>
     <option value=2>Block 2</option>
     <option value=3>Block 3</option>
@@ -36,11 +36,11 @@
     <option value=6>Block 6</option>
     <option value=7>Block 7</option>
     <option value=8>Block 8</option>
-  </select>
-  <br>
-  <label>New Course:</label>
-  <select id="newcourse" style="font-size: 16px;">
-      <optgroup label="Arts">
+</select>
+<br>
+<label>New Course:</label>
+<select id="newcourse" style="font-size: 16px;">
+    <optgroup label="Arts">
         <option value="Drama Gr.9 (ADA1O)">Drama Gr.9 (ADA1O)</option>
         <option value="Drama Gr.10 (ADA2O)">Drama Gr.10 (ADA2O)</option>
         <option value="Drama Gr.11 (ADA3M)">Drama Gr.11 (ADA3M)</option>
@@ -56,43 +56,72 @@
         <option value="Visual Arts Gr.11 (AVI3O)">Visual Arts Gr.11 (AVI3O)</option>
         <option value="Visual Arts Gr.12 (AVI4M)">Visual Arts Gr.12 (AVI4M)</option>
         <option value="Visual Arts Gr.12 (AVI4E)">Visual Arts Gr.12 (AVI4E)</option>
-      </optgroup>
-      <optgroup label="Business Studies">
-        <option value="Information and Communication Technology in Business Gr.9 (BTT1O)">Information and Communication Technology in Business Gr.9 (BTT1O1)</option>
-        <option value="Entrepreneurship: The Venture Gr.11 (BDI3C)">Entrepreneurship: The Venture Gr.11 (BDI3C1)</option>
-        <option value="Financial Accounting Fundamentals Gr.11 (BAF3M)">Financial Accounting Fundamentals Gr.11 (BAF3M)</option>
+    </optgroup>
+    <optgroup label="Business Studies">
+        <option value="Information and Communication Technology in Business Gr.9 (BTT1O)">Information and Communication
+            Technology in Business Gr.9 (BTT1O1)
+        </option>
+        <option value="Entrepreneurship: The Venture Gr.11 (BDI3C)">Entrepreneurship: The Venture Gr.11 (BDI3C1)
+        </option>
+        <option value="Financial Accounting Fundamentals Gr.11 (BAF3M)">Financial Accounting Fundamentals Gr.11
+            (BAF3M)
+        </option>
         <option value="Marketing: Goods Gr.11 (BMI3C)">Marketing: Goods Gr.11 (BMI3C)</option>
-        <option value="Financial Accounting Principles Gr.12 (BAT4M)">Financial Accounting Principles Gr.12 (BAT4M)</option>
-        <option value="International Business Fundamentals Gr.12 (BBB4M)">International Business Fundamentals Gr.12 (BBB4M)</option>
-        <option value="Business Leadership: Management Fundamentals Gr.12 (BOH4M)">Business Leadership: Management Fundamentals Gr.12 (BOH4M)</option>
-      </optgroup>
-      <optgroup label="Canadian and World Studies">
+        <option value="Financial Accounting Principles Gr.12 (BAT4M)">Financial Accounting Principles Gr.12 (BAT4M)
+        </option>
+        <option value="International Business Fundamentals Gr.12 (BBB4M)">International Business Fundamentals Gr.12
+            (BBB4M)
+        </option>
+        <option value="Business Leadership: Management Fundamentals Gr.12 (BOH4M)">Business Leadership: Management
+            Fundamentals Gr.12 (BOH4M)
+        </option>
+    </optgroup>
+    <optgroup label="Canadian and World Studies">
         <option value="Understanding Canadian Law Gr.11 (CLU3M)">Understanding Canadian Law Gr.11 (CLU3M)</option>
-        <option value="Canadian and International Law Gr.12 (CLN4U)">Canadian and International Law Gr.12 (CLN4U)</option>
+        <option value="Canadian and International Law Gr.12 (CLN4U)">Canadian and International Law Gr.12 (CLN4U)
+        </option>
         <option value="Issues in Canadian Geography Gr.9 (CGC1D)">Issues in Canadian Geography Gr.9 (CGC1D)</option>
-        <option value="Travel and Tourism: A Geographic Perspective Gr.11 (CGG3O)">Travel and Tourism: A Geographic Perspective Gr.11 (CGG3O)</option>
-        <option value="World Issues: A Geographic Analysis Gr.12 (CGW4U)">World Issues: A Geographic Analysis Gr.12 (CGW4U)</option>
-        <option value="Canadian History Since World War I Gr.10 (CHC2D)">Canadian History Since World War I Gr.10 (CHC2D)</option>
+        <option value="Travel and Tourism: A Geographic Perspective Gr.11 (CGG3O)">Travel and Tourism: A Geographic
+            Perspective Gr.11 (CGG3O)
+        </option>
+        <option value="World Issues: A Geographic Analysis Gr.12 (CGW4U)">World Issues: A Geographic Analysis Gr.12
+            (CGW4U)
+        </option>
+        <option value="Canadian History Since World War I Gr.10 (CHC2D)">Canadian History Since World War I Gr.10
+            (CHC2D)
+        </option>
         <option value="Canadian History Gr.10 (CHC2L)">Canadian History Gr.10 (CHC2L)</option>
-        <option value="World History Since 1900: Global & Regional Interactions Gr.11 (CHT3O)">World History Since 1900: Global & Regional Interactions Gr.11 (CHT3O)</option>
-        <option value="World History to the End of the 15th Century Gr.11 (CHW3M)">World History to the End of the 15th Century Gr.11 (CHW3M)</option>
-        <option value="World History Since the Fifteenth Century Gr.12 (CHY4U)">World History Since the Fifteenth Century Gr.12 (CHY4U)</option>
-        <option value="Analysing Current Economic Issues Gr.12 (CIA4U)">Analysing Current Economic Issues Gr.12 (CIA4U)</option>
-        <option value="The Individual and the Economy Gr.11 (CIE3M)">The Individual and the Economy Gr.11 (CIE3M)</option>
+        <option value="World History Since 1900: Global & Regional Interactions Gr.11 (CHT3O)">World History Since 1900:
+            Global & Regional Interactions Gr.11 (CHT3O)
+        </option>
+        <option value="World History to the End of the 15th Century Gr.11 (CHW3M)">World History to the End of the 15th
+            Century Gr.11 (CHW3M)
+        </option>
+        <option value="World History Since the Fifteenth Century Gr.12 (CHY4U)">World History Since the Fifteenth
+            Century Gr.12 (CHY4U)
+        </option>
+        <option value="Analysing Current Economic Issues Gr.12 (CIA4U)">Analysing Current Economic Issues Gr.12
+            (CIA4U)
+        </option>
+        <option value="The Individual and the Economy Gr.11 (CIE3M)">The Individual and the Economy Gr.11 (CIE3M)
+        </option>
         <option value="Canadian and World Politics Gr.12 (CPW4U)">Canadian and World Politics Gr.12 (CPW4U)</option>
-      </optgroup>
-      <optgroup label="Languages">
+    </optgroup>
+    <optgroup label="Languages">
         <option value="English Gr.9 (ENG1D)">English Gr.9 (ENG1D)</option>
         <option value="English Gr.9 (ENG1P)">English Gr.9 (ENG1P)</option>
         <option value="English Gr.10 (ENG2D)">English Gr.10 (ENG2D)</option>
         <option value="English Gr.10 (ENG2P)">English Gr.10 (ENG2P)</option>
-        <option value="Literacy Skills: Reading and Writing Gr.10 (ELS2O)">Literacy Skills: Reading and Writing Gr.10 (ELS2O)</option>
+        <option value="Literacy Skills: Reading and Writing Gr.10 (ELS2O)">Literacy Skills: Reading and Writing Gr.10
+            (ELS2O)
+        </option>
         <option value="English Gr.11 (ENG3U)">English Gr.11 (ENG3U)</option>
         <option value="English Gr.11 (ENG3E)">English Gr.11 (ENG3E)</option>
         <option value="English Gr.11 (ENG3E)">English Gr.11 (ENG3E)</option>
         <option value="Canadian Literature Gr.11 (ETC3M)">Canadian Literature Gr.11 (ETC3M)</option>
         <option value="Media Studies Gr.11 (EMS3O)">Media Studies Gr.11 (EMS3O)</option>
-        <option value="Presentation and Speaking Skills Gr.11 (EPS3O)">Presentation and Speaking Skills Gr.11 (EPS3O)</option>
+        <option value="Presentation and Speaking Skills Gr.11 (EPS3O)">Presentation and Speaking Skills Gr.11 (EPS3O)
+        </option>
         <option value="English Gr.12 (ENG4U)">English Gr.12 (ENG4U)</option>
         <option value="English Gr.12 (ENG4C)">English Gr.12 (ENG4C)</option>
         <option value="English Gr.12 (ENG4E)">English Gr.12 (ENG4E)</option>
@@ -100,23 +129,57 @@
         <option value="The Writer’s Craft Gr.12 (EWC4U)">The Writer’s Craft Gr.12 (EWC4U)</option>
         <option value="Studies in Literature Gr.12 (ETS4C)">Studies in Literature Gr.12 (ETS4C)</option>
         <option value="The Writer’s Craft College Gr.12 (EWC4C)">The Writer’s Craft College Gr.12 (EWC4C)</option>
-        <option value="English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3U)">English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3U)</option>
-        <option value="English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3C)">English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3C)</option>
-        <option value="English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3E)">English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3E)</option>
-        <option value="Contemporary First Nations, Métis, and Inuit Issues and Perspectives Gr.11 (NDA3M)">Contemporary First Nations, Métis, and Inuit Issues and Perspectives Gr.11 (NDA3M)</option>
-        <option value="World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3C)">World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3C)</option>
-        <option value="World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3E)">World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3E)</option>
-        <option value="Contemporary Indigenous Issues and Perspectives in a Global Context Gr.12 (NDW4M)">Contemporary Indigenous Issues and Perspectives in a Global Context Gr.12 (NDW4M)</option>
-        <option value="First Nations, Métis, and Inuit Governance in Canada Gr.12 (NDG4M)">First Nations, Métis, and Inuit Governance in Canada Gr.12 (NDG4M)</option>
-        <option value="Classical Languages (Ancient Greek/Latin) Level 1 (LVGBD/LVLBD)">Classical Languages (Ancient Greek/Latin) Level 1 (LVGBD/LVLBD)</option>
-        <option value="Classical Languages (Ancient Greek/Latin) Level 2 (LVGCU/LVLCU)">Classical Languages (Ancient Greek/Latin) Level 2 (LVGCU/LVLCU)</option>
-        <option value="Classical Languages (Ancient Greek/Latin) Level 3 (LVGDU/LVLDU)">Classical Languages (Ancient Greek/Latin) Level 3 (LVGDU/LVLDU)</option>
-        <option value="International Languages Level 1 (LBABD - LDYBD)">International Languages Level 1 (LBABD - LDYBD)</option>
-        <option value="International Languages Level 1 (LBABO - LDYBO)">International Languages Level 1 (LBABO - LDYBO)</option>
-        <option value="International Languages Level 2 (LBACU - LDYCU)">International Languages Level 2 (LBACU - LDYCU)</option>
-        <option value="International Languages Level 2 (LBACO - LDYCO)">International Languages Level 2 (LBACO - LDYCO)</option>
-        <option value="International Languages Level 3 (LBADU - LDYDU)">International Languages Level 3 (LBADU - LDYDU)</option>
-        <option value="International Languages Level 3 (LBADO - LDYDO)">International Languages Level 3 (LBADO - LDYDO)</option>
+        <option value="English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3U)">
+            English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3U)
+        </option>
+        <option value="English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3C)">
+            English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3C)
+        </option>
+        <option value="English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3E)">
+            English: Understanding Contemporary First Nations, Métis, and Inuit Voices Gr.11 (NBE3E)
+        </option>
+        <option value="Contemporary First Nations, Métis, and Inuit Issues and Perspectives Gr.11 (NDA3M)">Contemporary
+            First Nations, Métis, and Inuit Issues and Perspectives Gr.11 (NDA3M)
+        </option>
+        <option value="World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3C)">
+            World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3C)
+        </option>
+        <option value="World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3E)">
+            World Views and Aspirations of First Nations, Métis, and Inuit Communities in Canada Gr.11 (NBV3E)
+        </option>
+        <option value="Contemporary Indigenous Issues and Perspectives in a Global Context Gr.12 (NDW4M)">Contemporary
+            Indigenous Issues and Perspectives in a Global Context Gr.12 (NDW4M)
+        </option>
+        <option value="First Nations, Métis, and Inuit Governance in Canada Gr.12 (NDG4M)">First Nations, Métis, and
+            Inuit Governance in Canada Gr.12 (NDG4M)
+        </option>
+        <option value="Classical Languages (Ancient Greek/Latin) Level 1 (LVGBD/LVLBD)">Classical Languages (Ancient
+            Greek/Latin) Level 1 (LVGBD/LVLBD)
+        </option>
+        <option value="Classical Languages (Ancient Greek/Latin) Level 2 (LVGCU/LVLCU)">Classical Languages (Ancient
+            Greek/Latin) Level 2 (LVGCU/LVLCU)
+        </option>
+        <option value="Classical Languages (Ancient Greek/Latin) Level 3 (LVGDU/LVLDU)">Classical Languages (Ancient
+            Greek/Latin) Level 3 (LVGDU/LVLDU)
+        </option>
+        <option value="International Languages Level 1 (LBABD - LDYBD)">International Languages Level 1 (LBABD -
+            LDYBD)
+        </option>
+        <option value="International Languages Level 1 (LBABO - LDYBO)">International Languages Level 1 (LBABO -
+            LDYBO)
+        </option>
+        <option value="International Languages Level 2 (LBACU - LDYCU)">International Languages Level 2 (LBACU -
+            LDYCU)
+        </option>
+        <option value="International Languages Level 2 (LBACO - LDYCO)">International Languages Level 2 (LBACO -
+            LDYCO)
+        </option>
+        <option value="International Languages Level 3 (LBADU - LDYDU)">International Languages Level 3 (LBADU -
+            LDYDU)
+        </option>
+        <option value="International Languages Level 3 (LBADO - LDYDO)">International Languages Level 3 (LBADO -
+            LDYDO)
+        </option>
         <option value="Core French Gr.9 (FSF1D)">Core French Gr.9 (FSF1D)</option>
         <option value="Core French Gr.9 (FSF1P)">Core French Gr.9 (FSF1P)</option>
         <option value="Core French Gr.9 (FSF1O)">Core French Gr.9 (FSF1O)</option>
@@ -127,24 +190,34 @@
         <option value="Core French Gr.11 (FSF3O)">Core French Gr.11 (FSF3O)</option>
         <option value="Core French Gr.12 (FSF4U)">Core French Gr.12 (FSF4U)</option>
         <option value="Core French Gr.12 (FSF4O)">Core French Gr.12 (FSF4O)</option>
-      </optgroup>
-      <optgroup label="Computer Studies">
-        <option value="Introduction to Computer Studies Gr.10 (ICS2O)">Introduction to Computer Studies Gr.10 (ICS2O)</option>
-        <option value="Introduction to Computer Science Gr.11 (ICS3U)">Introduction to Computer Science Gr.11 (ICS3U)</option>
-        <option value="Introduction to Computer Programming Gr.11 (ICS3C)">Introduction to Computer Programming Gr.11 (ICS3C)</option>
+    </optgroup>
+    <optgroup label="Computer Studies">
+        <option value="Introduction to Computer Studies Gr.10 (ICS2O)">Introduction to Computer Studies Gr.10 (ICS2O)
+        </option>
+        <option value="Introduction to Computer Science Gr.11 (ICS3U)">Introduction to Computer Science Gr.11 (ICS3U)
+        </option>
+        <option value="Introduction to Computer Programming Gr.11 (ICS3C)">Introduction to Computer Programming Gr.11
+            (ICS3C)
+        </option>
         <option value="Computer Science Gr.12 (ICS4U)">Computer Science Gr.12 (ICS4U)</option>
         <option value="Computer Programming Gr.12 (ICS4C)">Computer Programming Gr.12 (ICS4C)</option>
-      </optgroup>
-      <optgroup label="Health and Physical Education">
-        <option value="Healthy Active Living Education Gr.9 (PPL1O)">Healthy Active Living Education Gr.9 (PPL1O)</option>
-        <option value="Healthy Active Living Education Gr.10 (PPL2O)">Healthy Active Living Education Gr.10 (PPL2O)</option>
-        <option value="Healthy Active Living Education Gr.11 (PPL3O)">Healthy Active Living Education Gr.11 (PPL3O)</option>
+    </optgroup>
+    <optgroup label="Health and Physical Education">
+        <option value="Healthy Active Living Education Gr.9 (PPL1O)">Healthy Active Living Education Gr.9 (PPL1O)
+        </option>
+        <option value="Healthy Active Living Education Gr.10 (PPL2O)">Healthy Active Living Education Gr.10 (PPL2O)
+        </option>
+        <option value="Healthy Active Living Education Gr.11 (PPL3O)">Healthy Active Living Education Gr.11 (PPL3O)
+        </option>
         <option value="Health for Life Gr.11 (PPZ3C)">Health for Life Gr.11 (PPZ3C)</option>
-        <option value="Healthy Active Living Education Gr.12 (PPL4O)">Healthy Active Living Education Gr.12 (PPL4O)</option>
+        <option value="Healthy Active Living Education Gr.12 (PPL4O)">Healthy Active Living Education Gr.12 (PPL4O)
+        </option>
         <option value="Introductory Kinesiology Gr.12 (PSK4U)">Introductory Kinesiology Gr.12 (PSK4U)</option>
-        <option value="Recreation and Healthy Active Living Leadership Gr.12 (PLF4M)">Recreation and Healthy Active Living Leadership Gr.12 (PLF4M)</option>
-      </optgroup> 
-      <optgroup label="Mathematics">
+        <option value="Recreation and Healthy Active Living Leadership Gr.12 (PLF4M)">Recreation and Healthy Active
+            Living Leadership Gr.12 (PLF4M)
+        </option>
+    </optgroup>
+    <optgroup label="Mathematics">
         <option value="Principles of Mathematics Gr.9 (MPM1D)">Principles of Mathematics Gr.9 (MPM1D)</option>
         <option value="Foundations of Mathematics Gr.9 (MFM1P)">Foundations of Mathematics Gr.9 (MFM1P)</option>
         <option value="Mathematics of Transfer Course Gr.9 (MPM1H)">Mathematics of Transfer Course Gr.9 (MPM1H)</option>
@@ -152,16 +225,27 @@
         <option value="Foundations of Mathematics Gr.10 (MFM2P)">Foundations of Mathematics Gr.10 (MFM2P)</option>
         <option value="Functions Gr.11 (MCR3U)">Functions Gr.11 (MCR3U)</option>
         <option value="Functions and Applications Gr.11 (MCF3M)">Functions and Applications Gr.11 (MCF3M)</option>
-        <option value="Foundations for College Mathematics Gr.11 (MBF3C)">Foundations for College Mathematics Gr.11 (MBF3C)</option>
-        <option value="Mathematics for Work and Everyday Life Gr.11 (MEL3E)">Mathematics for Work and Everyday Life Gr.11 (MEL3E)</option>
+        <option value="Foundations for College Mathematics Gr.11 (MBF3C)">Foundations for College Mathematics Gr.11
+            (MBF3C)
+        </option>
+        <option value="Mathematics for Work and Everyday Life Gr.11 (MEL3E)">Mathematics for Work and Everyday Life
+            Gr.11 (MEL3E)
+        </option>
         <option value="Advanced Functions Gr.12 (MHF4U)">Advanced Functions Gr.12 (MHF4U)</option>
         <option value="Calculus and Vectors Gr.12 (MCV4U)">Calculus and Vectors Gr.12 (MCV4U)</option>
-        <option value="Mathematics of Data Management Gr.12 (MDM4U)">Mathematics of Data Management Gr.12 (MDM4U)</option>
-        <option value="Mathematics for College Technology Gr.12 (MCT4C)">Mathematics for College Technology Gr.12 (MCT4C)</option>
-        <option value="Foundations for College Mathematics Gr.12 (MAP4C)">Foundations for College Mathematics Gr.12 (MAP4C)</option>
-        <option value="Mathematics for Work and Everyday Life Gr.12 (MEL4E)">Mathematics for Work and Everyday Life Gr.12 (MEL4E)</option>
-      </optgroup>
-      <optgroup label="Science">
+        <option value="Mathematics of Data Management Gr.12 (MDM4U)">Mathematics of Data Management Gr.12 (MDM4U)
+        </option>
+        <option value="Mathematics for College Technology Gr.12 (MCT4C)">Mathematics for College Technology Gr.12
+            (MCT4C)
+        </option>
+        <option value="Foundations for College Mathematics Gr.12 (MAP4C)">Foundations for College Mathematics Gr.12
+            (MAP4C)
+        </option>
+        <option value="Mathematics for Work and Everyday Life Gr.12 (MEL4E)">Mathematics for Work and Everyday Life
+            Gr.12 (MEL4E)
+        </option>
+    </optgroup>
+    <optgroup label="Science">
         <option value="Science Gr.9 (SNC1D)">Science Gr.9 (SNC1D)</option>
         <option value="Science Gr.9 (SNC1P)">Science Gr.9 (SNC1P)</option>
         <option value="Science Gr.10 (SNC2D)">Science Gr.10 (SNC2D)</option>
@@ -180,11 +264,15 @@
         <option value="Physics Gr.11 (SPH3U)">Physics Gr.11 (SPH3U)</option>
         <option value="Physics Gr.12 (SPH4U)">Physics Gr.12 (SPH4U)</option>
         <option value="Physics Gr.12 (SPH4C)">Physics Gr.12 (SPH4C)</option>
-      </optgroup>
-      <optgroup label="Social Sciencs and Humanities">
+    </optgroup>
+    <optgroup label="Social Sciencs and Humanities">
         <option value="Gender Studies Gr.11 (HSG3M)">Gender Studies Gr.11 (HSG3M)</option>
-        <option value="Equity, Diversity, and Social Justice Gr.11 (HSE3E)">Equity, Diversity, and Social Justice Gr.11 (HSE3E)</option>
-        <option value="Equity, Diversity, and Social Justice Gr.12 (HSE4M)">Equity, Diversity, and Social Justice Gr.12 (HSE4M)</option>
+        <option value="Equity, Diversity, and Social Justice Gr.11 (HSE3E)">Equity, Diversity, and Social Justice Gr.11
+            (HSE3E)
+        </option>
+        <option value="Equity, Diversity, and Social Justice Gr.12 (HSE4M)">Equity, Diversity, and Social Justice Gr.12
+            (HSE4M)
+        </option>
         <option value="World Cultures Gr.12 (HSC4M)">World Cultures Gr.12 (HSC4M)</option>
         <option value="Exploring Family Studies Gr.9 (HIF1O)">Exploring Family Studies Gr.9 (HIF1O)</option>
         <option value="Food and Nutrition Gr.9 (HFN1O)">Food and Nutrition Gr.9 (HFN1O)</option>
@@ -195,8 +283,11 @@
         <option value="Housing and Home Design Gr.11 (HLS3O)">Housing and Home Design Gr.11 (HLS3O)</option>
         <option value="Food and Culture Gr.11 (HFC3M)">Food and Culture Gr.11 (HFC3M)</option>
         <option value="Food and Culture Gr.11 (HFC3E)">Food and Culture Gr.11 (HFC3E)</option>
-        <option value="Dynamics of Human Relationships Gr.11 (HHD3O)">Dynamics of Human Relationships Gr.11 (HHD3O)</option>
-        <option value="Working with Infants and Young Children Gr.11 (HPW3C)">Working with Infants and Young Children Gr.11 (HPW3C)</option>
+        <option value="Dynamics of Human Relationships Gr.11 (HHD3O)">Dynamics of Human Relationships Gr.11 (HHD3O)
+        </option>
+        <option value="Working with Infants and Young Children Gr.11 (HPW3C)">Working with Infants and Young Children
+            Gr.11 (HPW3C)
+        </option>
         <option value="Raising Healthy Children Gr.11 (HPC3O)">Raising Healthy Children Gr.11 (HPC3O)</option>
         <option value="The World of Fashion Gr.12 (HNB4M)">The World of Fashion Gr.12 (HNB4M)</option>
         <option value="Nutrition and Health Gr.12 (HFA4U)">Nutrition and Health Gr.12 (HFA4U)</option>
@@ -204,34 +295,59 @@
         <option value="Food and Healthy Living Gr.12 (HFL4E)">Food and Healthy Living Gr.12 (HFL4E)</option>
         <option value="Families in Canada Gr.12 (HHS4U)">Families in Canada Gr.12 (HHS4U)</option>
         <option value="Families in Canada Gr.12 (HHS4C)">Families in Canada Gr.12 (HHS4C)</option>
-        <option value="Human Development throughout the Lifespan Gr.12 (HHG4M)">Human Development throughout the Lifespan Gr.12 (HHG4M)</option>
+        <option value="Human Development throughout the Lifespan Gr.12 (HHG4M)">Human Development throughout the
+            Lifespan Gr.12 (HHG4M)
+        </option>
         <option value="Personal Life Management Gr.12 (HIP4O)">Personal Life Management Gr.12 (HIP4O)</option>
-        <option value="Working with School-Age Children and Adolescents Gr.12 (HPD4C)">Working with School-Age Children and Adolescents Gr.12 (HPD4C)</option>
-        <option value="Introduction to Anthropology, Psychology, and Sociology Gr.11 (HSP3U)">Introduction fo Anthropology, Psychology, and Sociology Gr.11 (HSP3U)</option>
-        <option value="Introduction to Anthropology, Psychology, and Sociology Gr.11 (HSP3C)">Introduction fo Anthropology, Psychology, and Sociology Gr.11 (HSP3C)</option>
-        <option value="Challenge and Change in Society Gr.12 (HSB4U)">Challenge and Change in Society Gr.12 (HSB4U)</option>
+        <option value="Working with School-Age Children and Adolescents Gr.12 (HPD4C)">Working with School-Age Children
+            and Adolescents Gr.12 (HPD4C)
+        </option>
+        <option value="Introduction to Anthropology, Psychology, and Sociology Gr.11 (HSP3U)">Introduction fo
+            Anthropology, Psychology, and Sociology Gr.11 (HSP3U)
+        </option>
+        <option value="Introduction to Anthropology, Psychology, and Sociology Gr.11 (HSP3C)">Introduction fo
+            Anthropology, Psychology, and Sociology Gr.11 (HSP3C)
+        </option>
+        <option value="Challenge and Change in Society Gr.12 (HSB4U)">Challenge and Change in Society Gr.12 (HSB4U)
+        </option>
         <option value="Philosophy: The Big Questions Gr.11 (HZB3M)">Philosophy: The Big Questions Gr.11 (HZB3M)</option>
-        <option value="Philosophy: Questions and Theories Gr.12 (HZT4U)">Philosophy: Questions and Theories Gr.12 (HZT4U)</option>
-        <option value="World Religions and Belief Traditions: Perspectives, Issues, and Challenges Gr.11 (HRT3M)">World Religions and Belief Traditions: Perspectives, Issues, and Challenges Gr.11 (HRT3M)</option>
-        <option value="World Religions and Belief Traditions in Daily Life Gr.11 (HRF3O)">World Religions and Belief Traditions in Daily Life Gr.11 (HRF3O)</option>
-      </optgroup>
-      <optgroup label="Technological Education">
+        <option value="Philosophy: Questions and Theories Gr.12 (HZT4U)">Philosophy: Questions and Theories Gr.12
+            (HZT4U)
+        </option>
+        <option value="World Religions and Belief Traditions: Perspectives, Issues, and Challenges Gr.11 (HRT3M)">World
+            Religions and Belief Traditions: Perspectives, Issues, and Challenges Gr.11 (HRT3M)
+        </option>
+        <option value="World Religions and Belief Traditions in Daily Life Gr.11 (HRF3O)">World Religions and Belief
+            Traditions in Daily Life Gr.11 (HRF3O)
+        </option>
+    </optgroup>
+    <optgroup label="Technological Education">
         <option value="Exploring Technologies Gr.9 (TIJ1O)">Exploring Technologies Gr.9 (TIJ1O)</option>
         <option value="Communications Technology Gr.10 (TGJ2O)">Communications Technology Gr.10 (TGJ2O)</option>
         <option value="Communications Technology Gr.11 (TGJ3M)">Communications Technology Gr.11 (TGJ3M)</option>
-        <option value="Communications Technology: Broadcast and Print Production Gr.11 (TGJ3O)">Communications Technology: Broadcast and Print Production Gr.11 (TGJ3O)</option>
+        <option value="Communications Technology: Broadcast and Print Production Gr.11 (TGJ3O)">Communications
+            Technology: Broadcast and Print Production Gr.11 (TGJ3O)
+        </option>
         <option value="Communications Technology Gr.12 (TGJ4M)">Communications Technology Gr.12 (TGJ4M)</option>
-        <option value="Communications Technology: Digital Imagery and Web Design Gr.12 (TGJ4O)">Communications Technology: Digital Imagery and Web Design Gr.12 (TGJ4O)</option>
+        <option value="Communications Technology: Digital Imagery and Web Design Gr.12 (TGJ4O)">Communications
+            Technology: Digital Imagery and Web Design Gr.12 (TGJ4O)
+        </option>
         <option value="Computer Technology Gr.10 (TEJ2O)">Computer Technology Gr.10 (TEJ2O)</option>
-        <option value="Computer Engineering Technology Gr.11 (TEJ3M)">Computer Engineering Technology Gr.11 (TEJ3M)</option>
+        <option value="Computer Engineering Technology Gr.11 (TEJ3M)">Computer Engineering Technology Gr.11 (TEJ3M)
+        </option>
         <option value="Computer Technology Gr.11 (TEJ3E)">Computer Technology Gr.11 (TEJ3E)</option>
-        <option value="Computer Engineering Technology Gr.12 (TEJ4M)">Computer Engineering Technology Gr.12 (TEJ4M)</option>
+        <option value="Computer Engineering Technology Gr.12 (TEJ4M)">Computer Engineering Technology Gr.12 (TEJ4M)
+        </option>
         <option value="Computer Technology Gr.12 (TEJ4E)">Computer Technology Gr.12 (TEJ4E)</option>
         <option value="Construction Technology Gr.10 (TCJ2O)">Construction Technology Gr.10 (TCJ2O)</option>
-        <option value="Construction Engineering Technology Gr.11 (TCJ3C)">Construction Engineering Technology Gr.11 (TCJ3C)</option>
+        <option value="Construction Engineering Technology Gr.11 (TCJ3C)">Construction Engineering Technology Gr.11
+            (TCJ3C)
+        </option>
         <option value="Construction Technology Gr.11 (TCJ3E)">Construction Technology Gr.11 (TCJ3E)</option>
         <option value="Custom Woodworking Gr.11 (TWJ3E)">Custom Woodworking Gr.11 (TWJ3E)</option>
-        <option value="Construction Engineering Technology Gr.12 (TCJ4C)">Construction Engineering Technology Gr.12 (TCJ4C)</option>
+        <option value="Construction Engineering Technology Gr.12 (TCJ4C)">Construction Engineering Technology Gr.12
+            (TCJ4C)
+        </option>
         <option value="Construction Technology Gr.12 (TCJ4E)">Construction Technology Gr.12 (TCJ4E)</option>
         <option value="Custom Woodworking Gr.12 (TWJ4E)">Custom Woodworking Gr.12 (TWJ4E)</option>
         <option value="Green Industries Gr.10 (THJ2O)">Green Industries Gr.10 (THJ2O)</option>
@@ -247,7 +363,9 @@
         <option value="Health Care Gr.11 (TPJ3C)">Health Care Gr.11 (TPJ3C)</option>
         <option value="Health Care Gr.12 (TPJ4M)">Health Care Gr.12 (TPJ4M)</option>
         <option value="Health Care Gr.12 (TPJ4C)">Health Care Gr.12 (TPJ4C)</option>
-        <option value="Child Development and Gerontology Gr.12 (TOJ4C)">Child Development and Gerontology Gr.12 (TOJ4C)</option>
+        <option value="Child Development and Gerontology Gr.12 (TOJ4C)">Child Development and Gerontology Gr.12
+            (TOJ4C)
+        </option>
         <option value="Health Care: Support Services Gr.12 (TPJ4E)">Health Care: Support Services Gr.12 (TPJ4E)</option>
         <option value="Hospitality and Tourism Gr.10 (TFJ2O)">Hospitality and Tourism Gr.10 (TFJ2O)</option>
         <option value="Hospitality and Tourism Gr.11 (TFJ3C)">Hospitality and Tourism Gr.11 (TFJ3C)</option>
@@ -263,286 +381,296 @@
         <option value="Manufacturing Technology Gr.12 (TMJ3E)">Manufacturing Technology Gr.12 (TMJ3E)</option>
         <option value="Technological Design Gr.10 (TDJ2O)">Technological Design Gr.10 (TDJ2O)</option>
         <option value="Technological Design Gr.11 (TDJ3M)">Technological Design Gr.11 (TDJ3M)</option>
-        <option value="Technological Design and the Environment Gr.11 (TDJ3O)">Technological Design and the Environment Gr.11 (TDJ3O)</option>
+        <option value="Technological Design and the Environment Gr.11 (TDJ3O)">Technological Design and the Environment
+            Gr.11 (TDJ3O)
+        </option>
         <option value="Technological Design Gr.12 (TDJ4M)">Technological Design Gr.12 (TDJ4M)</option>
         <option value="Technological Design Gr.12 (TDJ4M)">Technological Design Gr.12 (TDJ4M)</option>
-        <option value="Technological Design in the Twenty-first Century Gr.12 (TDJ4O)">Technological Design in the Twenty-first Century Gr.12 (TDJ4O)</option>
+        <option value="Technological Design in the Twenty-first Century Gr.12 (TDJ4O)">Technological Design in the
+            Twenty-first Century Gr.12 (TDJ4O)
+        </option>
         <option value="Transportation Technology Gr.10 (TTJ2O)">Transportation Technology Gr.10 (TTJ2O)</option>
         <option value="Transportation Technology Gr.11 (TTJ3C)">Transportation Technology Gr.11 (TTJ3C)</option>
-        <option value="Transportation Technology: Vehicle Ownership Gr.11 (TTJ3O)">Transportation Technology: Vehicle Ownership Gr.11 (TTJ3O)</option>
-      </optgroup>
-    </select>
-  <br>
-  <button onclick="reset()">Reset</button>
-  <button onclick="standard()">Standard</button>
-  <button onclick="update()">Update</button>
-  <br><br>
-  <form method="post", action="/course_selection">
-    <table border="2" id="table">
-    {% for i in range(18) %}
-    <tr>
-        {% for j in range(4) %}
-        {% if i == 0 and j == 0%}
-        <td align="center" height="50" width="150"><b>Grade 9</b></td>
-        {% elif i == 0 and j == 1 %}
-        <td align="center" height="50" width="150"><b>Grade 10</b></td>
-        {% elif i == 0 and j == 2 %}
-        <td align="center" height="50" width="150"><b>Grade 11</b></td>
-        {% elif i == 0 and j == 3 %}
-        <td align="center" height="50" width="150"><b>Grade 12</b></td>
-        {% elif i == 1 and j == 0 %}
-        <td colspan="4" align="center" height="50"><b>Day School</b></td>
-        {% elif i == 10 and j == 0 %}
-        <td colspan="4" align="center" height="50"><b>Summer School</b></td>
-        {% elif i == 13 and j == 0 %}
-        <td colspan="4" align="center" height="50"><b>Night School</b></td>
-        {% elif i == 16 and j == 0 %}
-        <td colspan="4" align="center" height="50"><b>After School</b></td>
-        {% elif i != 1 and i != 10 and i != 13 and i != 16 %}
-        <td name={{i*4+j}} align="center" height="50">{{course[i][j]}}</td>
-        {% endif %}
+        <option value="Transportation Technology: Vehicle Ownership Gr.11 (TTJ3O)">Transportation Technology: Vehicle
+            Ownership Gr.11 (TTJ3O)
+        </option>
+    </optgroup>
+</select>
+<br>
+<button onclick="reset()">Reset</button>
+<button onclick="standard()">Standard</button>
+<button onclick="update()">Update</button>
+<br><br>
+
+<table border="2" id="table">
+    <form method="post" , action="/course_selection">
+        {% for i in range(18) %}
+        <tr>
+            {% for j in range(4) %}
+            {% if i == 0 and j == 0%}
+            <td align="center" height="50" width="150"><b>Grade 9</b></td>
+            {% elif i == 0 and j == 1 %}
+            <td align="center" height="50" width="150"><b>Grade 10</b></td>
+            {% elif i == 0 and j == 2 %}
+            <td align="center" height="50" width="150"><b>Grade 11</b></td>
+            {% elif i == 0 and j == 3 %}
+            <td align="center" height="50" width="150"><b>Grade 12</b></td>
+            {% elif i == 1 and j == 0 %}
+            <td colspan="4" align="center" height="50"><b>Day School</b></td>
+            {% elif i == 10 and j == 0 %}
+            <td colspan="4" align="center" height="50"><b>Summer School</b></td>
+            {% elif i == 13 and j == 0 %}
+            <td colspan="4" align="center" height="50"><b>Night School</b></td>
+            {% elif i == 16 and j == 0 %}
+            <td colspan="4" align="center" height="50"><b>After School</b></td>
+            {% elif i != 1 and i != 10 and i != 13 and i != 16 %}
+            <td name={{i*4+j}} align="center" height="50">{{course[i][j]}}</td>
+            {% endif %}
+            {% endfor %}
+        </tr>
         {% endfor %}
-    </tr>
-    {% endfor %}
-    </table>
-    <input type="submit" value="Save">
-  </form>
-  <br>
-  <button class="collapseField" title="Want a timetable that suits you? Please fill out the survey!" id="survey">Survey</button>
-  <div class="surveyQuestion" id="Question">
+    </form>
+</table>
+<input type="submit" value="Save">
+
+<br>
+<button class="collapseField" title="Want a timetable that suits you? Please fill out the survey!" id="survey">Survey
+</button>
+<div class="surveyQuestion" id="Question">
     <label style="font-size: 20px;">1. What grade are you entering in the following year?</label>
     <select id="question1" style="font-size: 16px;">
-      <option value="gr9">Grade 9</option>
-      <option value="gr10">Grade 10</option>
-      <option value="gr11">Grade 11</option>
-      <option value="gr12">Grade 12</option>
+        <option value="gr9">Grade 9</option>
+        <option value="gr10">Grade 10</option>
+        <option value="gr11">Grade 11</option>
+        <option value="gr12">Grade 12</option>
     </select>
     <br>
     <label style="font-size: 20px;">2. Select your top preferred field of study.</label>
     <select id="question2" style="font-size: 16px;">
-      <optgroup label="Arts">
-        <option value="art">Art</option>
-        <option value="drama">Drama</option>
-        <option value="music">Music</option>
-        <option value="npart">No Preference</option>
-      </optgroup>
-      <optgroup label="Business Studies">
-        <option value="marketing">Marketing</option>
-        <option value="accounting">Accounting</option>
-        <option value="entrepreneurship">Entrepreneurship</option>
-        <option value="management">Management</option>  
-        <option value="npbusinessstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Canadian and World Studies">
-        <option value="geography">Geography</option>
-        <option value="history">History</option>
-        <option value="economics">Economics</option>
-        <option value="npcanadianandworldstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Languages">
-        <option value="english">English</option>
-        <option value="french">French</option>
-        <option value="nplanguages">No Preference</option>
-      </optgroup>
-      <optgroup label="Computer Studies">
-        <option value="engineering">Engineering</option>
-        <option value="computerscience">Computer Science</option>
-        <option value="npcomputerstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Health and Physical Education">
-        <option value="fitness">Fitness</option>
-        <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
-        <option value="nphealthandphysicaleducation">No Preference</option>
-      </optgroup>
-      <optgroup label="Mathematics">
-        <option value="algebraandfunctions">Algebra & Functions</option>
-        <option value="datamanagement">Data Management</option>
-        <option value="npmathematics">No Preference</option>
-      </optgroup>
-      <optgroup label="Science">
-        <option value="physics">Physics</option>
-        <option value="chemistry">Chemistry</option>
-        <option value="biology">Biology</option>
-        <option value="npscience">No Preference</option>
-      </optgroup>
-      <optgroup label="Social Sciences and Humanities">
-        <option value="familystudies">Family Studies</option>
-        <option value="foodandnutrition">Food and Nutrition</option>
-        <option value="philosophy">Philosophy</option>
-        <option value="psychology">Psychology</option>
-        <option value="npsocialstudiesandhumanities">No Preference</option>
-      </optgroup>
-      <optgroup label="Technological Education">
-        <option value="communicationstechnology">Communications Technology</option>
-        <option value="technologicaldesign">Technological Design</option>
-        <option value="nptechnologicalstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="No Preference">
-        <option value="npnopreference">No Preference</option>
-      </optgroup>
+        <optgroup label="Arts">
+            <option value="art">Art</option>
+            <option value="drama">Drama</option>
+            <option value="music">Music</option>
+            <option value="npart">No Preference</option>
+        </optgroup>
+        <optgroup label="Business Studies">
+            <option value="marketing">Marketing</option>
+            <option value="accounting">Accounting</option>
+            <option value="entrepreneurship">Entrepreneurship</option>
+            <option value="management">Management</option>
+            <option value="npbusinessstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Canadian and World Studies">
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+            <option value="economics">Economics</option>
+            <option value="npcanadianandworldstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Languages">
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="nplanguages">No Preference</option>
+        </optgroup>
+        <optgroup label="Computer Studies">
+            <option value="engineering">Engineering</option>
+            <option value="computerscience">Computer Science</option>
+            <option value="npcomputerstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Health and Physical Education">
+            <option value="fitness">Fitness</option>
+            <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
+            <option value="nphealthandphysicaleducation">No Preference</option>
+        </optgroup>
+        <optgroup label="Mathematics">
+            <option value="algebraandfunctions">Algebra & Functions</option>
+            <option value="datamanagement">Data Management</option>
+            <option value="npmathematics">No Preference</option>
+        </optgroup>
+        <optgroup label="Science">
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+            <option value="npscience">No Preference</option>
+        </optgroup>
+        <optgroup label="Social Sciences and Humanities">
+            <option value="familystudies">Family Studies</option>
+            <option value="foodandnutrition">Food and Nutrition</option>
+            <option value="philosophy">Philosophy</option>
+            <option value="psychology">Psychology</option>
+            <option value="npsocialstudiesandhumanities">No Preference</option>
+        </optgroup>
+        <optgroup label="Technological Education">
+            <option value="communicationstechnology">Communications Technology</option>
+            <option value="technologicaldesign">Technological Design</option>
+            <option value="nptechnologicalstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="No Preference">
+            <option value="npnopreference">No Preference</option>
+        </optgroup>
     </select>
     <br>
     <label style="font-size: 20px;">3. Enter your second preferred field of study.</label>
     <select id="question3" style="font-size: 16px;">
-      <optgroup label="Arts">
-        <option value="art">Art</option>
-        <option value="drama">Drama</option>
-        <option value="music">Music</option>
-        <option value="npart">No Preference</option>
-      </optgroup>
-      <optgroup label="Business Studies">
-        <option value="marketing">Marketing</option>
-        <option value="accounting">Accounting</option>
-        <option value="entrepreneurship">Entrepreneurship</option>
-        <option value="management">Management</option>  
-        <option value="npbusinessstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Canadian and World Studies">
-        <option value="geography">Geography</option>
-        <option value="history">History</option>
-        <option value="economics">Economics</option>
-        <option value="npcanadianandworldstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Languages">
-        <option value="english">English</option>
-        <option value="french">French</option>
-        <option value="nplanguages">No Preference</option>
-      </optgroup>
-      <optgroup label="Computer Studies">
-        <option value="engineering">Engineering</option>
-        <option value="computerscience">Computer Science</option>
-        <option value="npcomputerstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Health and Physical Education">
-        <option value="fitness">Fitness</option>
-        <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
-        <option value="nphealthandphysicaleducation">No Preference</option>
-      </optgroup>
-      <optgroup label="Mathematics">
-        <option value="algebraandfunctions">Algebra & Functions</option>
-        <option value="datamanagement">Data Management</option>
-        <option value="npmathematics">No Preference</option>
-      </optgroup>
-      <optgroup label="Science">
-        <option value="physics">Physics</option>
-        <option value="chemistry">Chemistry</option>
-        <option value="biology">Biology</option>
-        <option value="npscience">No Preference</option>
-      </optgroup>
-      <optgroup label="Social Sciences and Humanities">
-        <option value="familystudies">Family Studies</option>
-        <option value="foodandnutrition">Food and Nutrition</option>
-        <option value="philosophy">Philosophy</option>
-        <option value="psychology">Psychology</option>
-        <option value="npsocialstudiesandhumanities">No Preference</option>
-      </optgroup>
-      <optgroup label="Technological Education">
-        <option value="communicationstechnology">Communications Technology</option>
-        <option value="technologicaldesign">Technological Design</option>
-        <option value="nptechnologicalstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="No Preference">
-        <option value="npnopreference">No Preference</option>
-      </optgroup>
+        <optgroup label="Arts">
+            <option value="art">Art</option>
+            <option value="drama">Drama</option>
+            <option value="music">Music</option>
+            <option value="npart">No Preference</option>
+        </optgroup>
+        <optgroup label="Business Studies">
+            <option value="marketing">Marketing</option>
+            <option value="accounting">Accounting</option>
+            <option value="entrepreneurship">Entrepreneurship</option>
+            <option value="management">Management</option>
+            <option value="npbusinessstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Canadian and World Studies">
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+            <option value="economics">Economics</option>
+            <option value="npcanadianandworldstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Languages">
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="nplanguages">No Preference</option>
+        </optgroup>
+        <optgroup label="Computer Studies">
+            <option value="engineering">Engineering</option>
+            <option value="computerscience">Computer Science</option>
+            <option value="npcomputerstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Health and Physical Education">
+            <option value="fitness">Fitness</option>
+            <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
+            <option value="nphealthandphysicaleducation">No Preference</option>
+        </optgroup>
+        <optgroup label="Mathematics">
+            <option value="algebraandfunctions">Algebra & Functions</option>
+            <option value="datamanagement">Data Management</option>
+            <option value="npmathematics">No Preference</option>
+        </optgroup>
+        <optgroup label="Science">
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+            <option value="npscience">No Preference</option>
+        </optgroup>
+        <optgroup label="Social Sciences and Humanities">
+            <option value="familystudies">Family Studies</option>
+            <option value="foodandnutrition">Food and Nutrition</option>
+            <option value="philosophy">Philosophy</option>
+            <option value="psychology">Psychology</option>
+            <option value="npsocialstudiesandhumanities">No Preference</option>
+        </optgroup>
+        <optgroup label="Technological Education">
+            <option value="communicationstechnology">Communications Technology</option>
+            <option value="technologicaldesign">Technological Design</option>
+            <option value="nptechnologicalstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="No Preference">
+            <option value="npnopreference">No Preference</option>
+        </optgroup>
     </select>
     <br>
     <label style="font-size: 20px;">4. Enter your third preferred field of study.</label>
     <select id="question4" style="font-size: 16px;">
-      <optgroup label="Arts">
-        <option value="art">Art</option>
-        <option value="drama">Drama</option>
-        <option value="music">Music</option>
-        <option value="npart">No Preference</option>
-      </optgroup>
-      <optgroup label="Business Studies">
-        <option value="marketing">Marketing</option>
-        <option value="accounting">Accounting</option>
-        <option value="entrepreneurship">Entrepreneurship</option>
-        <option value="management">Management</option>  
-        <option value="npbusinessstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Canadian and World Studies">
-        <option value="geography">Geography</option>
-        <option value="history">History</option>
-        <option value="economics">Economics</option>
-        <option value="npcanadianandworldstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Languages">
-        <option value="english">English</option>
-        <option value="french">French</option>
-        <option value="nplanguages">No Preference</option>
-      </optgroup>
-      <optgroup label="Computer Studies">
-        <option value="engineering">Engineering</option>
-        <option value="computerscience">Computer Science</option>
-        <option value="npcomputerstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="Health and Physical Education">
-        <option value="fitness">Fitness</option>
-        <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
-        <option value="nphealthandphysicaleducation">No Preference</option>
-      </optgroup>
-      <optgroup label="Mathematics">
-        <option value="algebraandfunctions">Algebra & Functions</option>
-        <option value="datamanagement">Data Management</option>
-        <option value="npmathematics">No Preference</option>
-      </optgroup>
-      <optgroup label="Science">
-        <option value="physics">Physics</option>
-        <option value="chemistry">Chemistry</option>
-        <option value="biology">Biology</option>
-        <option value="npscience">No Preference</option>
-      </optgroup>
-      <optgroup label="Social Sciences and Humanities">
-        <option value="familystudies">Family Studies</option>
-        <option value="foodandnutrition">Food and Nutrition</option>
-        <option value="philosophy">Philosophy</option>
-        <option value="psychology">Psychology</option>
-        <option value="npsocialstudiesandhumanities">No Preference</option>
-      </optgroup>
-      <optgroup label="Technological Education">
-        <option value="communicationstechnology">Communications Technology</option>
-        <option value="technologicaldesign">Technological Design</option>
-        <option value="nptechnologicalstudies">No Preference</option>
-      </optgroup>
-      <optgroup label="No Preference">
-        <option value="npnopreference">No Preference</option>
-      </optgroup>
+        <optgroup label="Arts">
+            <option value="art">Art</option>
+            <option value="drama">Drama</option>
+            <option value="music">Music</option>
+            <option value="npart">No Preference</option>
+        </optgroup>
+        <optgroup label="Business Studies">
+            <option value="marketing">Marketing</option>
+            <option value="accounting">Accounting</option>
+            <option value="entrepreneurship">Entrepreneurship</option>
+            <option value="management">Management</option>
+            <option value="npbusinessstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Canadian and World Studies">
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+            <option value="economics">Economics</option>
+            <option value="npcanadianandworldstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Languages">
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="nplanguages">No Preference</option>
+        </optgroup>
+        <optgroup label="Computer Studies">
+            <option value="engineering">Engineering</option>
+            <option value="computerscience">Computer Science</option>
+            <option value="npcomputerstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="Health and Physical Education">
+            <option value="fitness">Fitness</option>
+            <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
+            <option value="nphealthandphysicaleducation">No Preference</option>
+        </optgroup>
+        <optgroup label="Mathematics">
+            <option value="algebraandfunctions">Algebra & Functions</option>
+            <option value="datamanagement">Data Management</option>
+            <option value="npmathematics">No Preference</option>
+        </optgroup>
+        <optgroup label="Science">
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+            <option value="npscience">No Preference</option>
+        </optgroup>
+        <optgroup label="Social Sciences and Humanities">
+            <option value="familystudies">Family Studies</option>
+            <option value="foodandnutrition">Food and Nutrition</option>
+            <option value="philosophy">Philosophy</option>
+            <option value="psychology">Psychology</option>
+            <option value="npsocialstudiesandhumanities">No Preference</option>
+        </optgroup>
+        <optgroup label="Technological Education">
+            <option value="communicationstechnology">Communications Technology</option>
+            <option value="technologicaldesign">Technological Design</option>
+            <option value="nptechnologicalstudies">No Preference</option>
+        </optgroup>
+        <optgroup label="No Preference">
+            <option value="npnopreference">No Preference</option>
+        </optgroup>
     </select>
     <br>
     <label style="font-size: 20px;">5. Select your preferred pathway</label>
     <select id="question7" style="font-size: 16px;">
-      <option value="unipathway">University</option>
-      <option value="collegepathway">College</option>
-      <option value="workplacepathway">Workplace</option>
+        <option value="unipathway">University</option>
+        <option value="collegepathway">College</option>
+        <option value="workplacepathway">Workplace</option>
     </select>
     <br>
-    <label style="font-size: 20px;">6. If you are going to Gr. 12 or above in the following year, how many spare do you wish to have?</label>
+    <label style="font-size: 20px;">6. If you are going to Gr. 12 or above in the following year, how many spare do you
+        wish to have?</label>
     <select id="question8" style="font-size: 16px;">
-      <option value="zerospare">0</option>
-      <option value="onespare">1</option>
-      <option value="twospare">2</option>
+        <option value="zerospare">0</option>
+        <option value="onespare">1</option>
+        <option value="twospare">2</option>
     </select>
     <br>
     <label style="font-size: 20px;">7. How many courses are you willing to fast-track (maximum)?</label>
     <select id="question9" style="font-size: 16px;">
-      <option value="zerofast">0</option>
-      <option value="onefast">1</option>
-      <option value="twofast">2</option>
-      <option value="threefast">3</option>
-      <option value="fourfast">4</option>
-      <option value="fivefast">5</option>
+        <option value="zerofast">0</option>
+        <option value="onefast">1</option>
+        <option value="twofast">2</option>
+        <option value="threefast">3</option>
+        <option value="fourfast">4</option>
+        <option value="fivefast">5</option>
     </select>
     <br>
     <label style="font-size: 20px;">8. Are you planning to join the repertoire?</label>
     <select id="question10" style="font-size: 16px;">
-      <option value="yesrep">Yes</option>
-      <option value="norep">No</option>
+        <option value="yesrep">Yes</option>
+        <option value="norep">No</option>
     </select>
     <br>
-  </div>
-  <br>
-  <script src="static/js/timetable.js"></script>
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</div>
+<br>
+<script src="static/js/timetable.js"></script>
+<script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 </html>
