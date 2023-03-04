@@ -57,7 +57,7 @@ li a{
     <li><a href="/timetable">Course Planner</a></li>
     <li><a href="/grades">Grades</a></li>
     <li><a href="/login">Calendar</a></li>
-    {% if session.student_number %}
+    {% if not session.student_number %} 
       <li><a href="/login">Log In</a></li>
       <li><a href="/register">Register</a></li>
     {% else %}
