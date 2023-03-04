@@ -3,16 +3,47 @@
 {% block title %}Login{% endblock %}
 {% block active %}Login{% endblock %}
 
+{% block preload %}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Open+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&family=Ubuntu&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #293462;
+  font-family: Cabin;
+}
+
+h1{
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: poppins;
+  font-weight: 700;
+}
+
+p{
+  margin-left: 50px;
+  font-family: Ubuntu;
+  padding: 10px;
+  line-height: 25px;
+}
+</style>
+{% endblock %}
 {% block main %}
 
-<h3>About Coursuccess</h3>
+<h1>About Coursuccess</h1>
 
+<p>
 The goal of this website is to help students become more productive and to have a better plan for their future.
 We have a lot of different tools for planning your future, such as surveys that recommend courses specific to you, and
 a goal setter that would help to remind where you want to get from here.
-<br>
-<br>
+</p>
+
+<p>
 Hopefully you will find this website useful and use for your next plan!
+</p>
+
 
 
 
