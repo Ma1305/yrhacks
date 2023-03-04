@@ -9,25 +9,26 @@
 </head>
 
 <body>
-<h1>Timetable</h1>
-<h3>Course Update</h3><br>
-<label>Course Type:</label>
-<select id="coursetype" style="font-size: 16px;">
+<div class = "top-select">
+  <h1>Timetable</h1>
+  <h3>Course Update</h3><br>
+  <label>Course Type:</label>
+  <select id="coursetype" style="font-size: 16px;">
     <option value="dayschool">Day School</option>
     <option value="summerschool">Summer School</option>
     <option value="nightschool">Night School</option>
-    <option value="rep">After School</option>
-</select>
-<br>
-<label>Grade:</label>
-<select id="grade" style="font-size: 16px;">
+    <option value="rep">Repertoire</option>
+  </select>
+  <br>
+  <label>Grade:</label>
+  <select id="grade" style="font-size: 16px;">
     <option value=0>Grade 9</option>
     <option value=1>Grade 10</option>
     <option value=2>Grade 11</option>
     <option value=3>Grade 12</option>
-</select>
-<label>Course Block:</label>
-<select id="courseblock" style="font-size: 16px;">
+  </select>
+  <label>Course Block:</label>
+  <select id="courseblock" style="font-size: 16px;">
     <option value=1>Block 1</option>
     <option value=2>Block 2</option>
     <option value=3>Block 3</option>
@@ -36,8 +37,8 @@
     <option value=6>Block 6</option>
     <option value=7>Block 7</option>
     <option value=8>Block 8</option>
-</select>
-<br>
+  </select>
+  <br>
   <label>New Course:</label>
   <select id="newcourse" style="font-size: 16px;">
       <optgroup label="Arts">
@@ -229,6 +230,7 @@
   <button onclick="reset()">Reset</button>
   <button onclick="standard()">Standard</button>
   <button onclick="update()">Update</button>
+  </div>
   <br><br>
 
 <form method="post" , action="/course_selection">
