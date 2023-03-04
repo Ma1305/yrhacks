@@ -25,7 +25,7 @@ def login_required(f):
 # three possible codes: 1 good, -1 no exist, -2 wrong password, -3 not verified
 def check_login(rows):
     # check if user exists
-    if len(rows) < 0:
+    if len(rows) == 0:
         return -1
     # check for correct password
     if rows[0]["password"] != request.form.get("login-password"):
