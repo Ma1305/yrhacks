@@ -265,6 +265,7 @@ function generate() {
       idx = rand(0, cnt + 10);
     }
     vis[idx] = 1;
+    coursetype[idx] = random_shuffle(coursetype[idx]);
     var exist = 0;
     for(var j=0; j<coursetype[idx].length; j++) {
       if(parseInt(coursetype[idx][j].charAt(coursetype[idx][j].length - 3)) == grade + 1 && 
