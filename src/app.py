@@ -321,6 +321,7 @@ def course_selection():
 
     # writing the updated courses into database
     courses_text = str(courses).replace("[", "").replace("]", "")
+    app.logger.info(f"courses being added to the database, {courses_text}")
     db.execute("UPDATE time_tables SET courses=:courses WHERE student_number=:student_number", courses=courses_text,
                student_number=session["student_number"])
 
