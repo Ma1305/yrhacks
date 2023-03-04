@@ -236,22 +236,39 @@ def course_selection():
     rows = db.execute("SELECT * FROM time_tables WHERE student_number=:student_number",
                       student_number=session["student-number"])
 
-    courses = []
+    courses = [[]]
     # Check if there is a timetable
     if len(rows) > 0:
         courses = rows[0]["courses"].split(", ")
 
     else:
+        r = 0
         for i in range(18):
             for j in range(4):
+                # Normal courses
                 if i < 10:
-                    courses.append(f"Course {int(i/4)}")
+                    courses[r].append(f"Course {int(i/4)}")
+                elif i == 10:
+                    courses.append([])
+                    r += 1
+
+                # Summer courses
                 elif i < 13:
-                    courses.append(f"Summer Course {int(i/4)}")
+                    courses[r].append(f"Summer Course {int(i/4)}")
+                elif i == 13:
+                    courses.append([])
+                    r += 1
+
+                # Night courses
                 elif i < 16:
-                    courses.append(f"Night Course {int(i/4)}")
+                    courses[r].append(f"Night Course {int(i/4)}")
+                elif i == 13:
+                    courses.append([])
+                    r += 1
+
+                # Repertoire courses
                 else:
-                    courses.append(f"Repertoire Course {int(i / 4)}")
+                    courses[r].append(f"Repertoire Course {int(i / 4)}")
 
     if request.method == "GET":
         return render_template("timetable.html", course=courses, range=range)
