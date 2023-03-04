@@ -1,16 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Open+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&family=Ubuntu&display=swap');
+
+
+.text{
+    text-align: center;
+    height: 100px;
+    background: #262626;
+    color: #FFF;
+}
+
+.nav{
+    background: #D61C4E;
+    color: #FFF;
+    display: flex
+}
+
+.nav .logo{
+    font-family: poppins;
+    padding-left: 20px;
+    font-size: 24px;
+    margin-left: 25px
+}
+
+.nav ul{
+    display: flex;
+    width: 50%;
+    margin-left: auto
+}
+
+li{
+    padding-top: 15px;
+    padding-right: 40px;
+    list-style: none
+}
+
+li a{
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body{
+  background-color: #D61C4E;
+  color: white;
+}
 html {
   height: 100%;
   width: 100%;
 }
 
+button{
+  margin-top: 20px;
+}
+
+label{
+  font-weight: 900;
+  display: flex;
+  font-family: Source Sans Pro;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+table{
+  border: 2px solid white;
+}
+td{
+  font-family: Source Sans Pro;
+  border: 2px solid white;
+}
+
 .button {
+  position: absolute;
+  left: 40%;
   border: none;
   color:white;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #477eff;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 8px 18px;
 }
 
 .button:hover {
@@ -18,8 +85,9 @@ html {
 }
 
 .collapseField {
+  font-family: Cabin;
   border: none;
-  background-color: #a5a4f9;
+  background-color: #6677bf;
   color: white;
   width: 100%;
   font-size: 20px;
@@ -28,14 +96,34 @@ html {
 }
 
 .collapseField:hover, active {
-  background-color: #807efb;
+  background-color: #9ca7d6;
 }
 
 .surveyQuestion {
   display: none;
-  background-color: #d7d6ff;;
+  background-color: #6677bf;
+  font-family: Cabin;
+}
+
+h1{
+  color: #405198;
+  font-family: Poppins;
 }
 
 h3 {
+  font-family: Poppins;
+  color: #405198;
   display: inline;
+}
+
+.top-select{
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #FEB139;
+}
+
+select{
+  font-family: Ubuntu;
+  padding: 2px;
 }
