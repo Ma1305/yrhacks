@@ -49,15 +49,19 @@ li a{
     </script>
   </head>
   <body>
-    <div class = "nav">
-    <p class = "logo">Coursuccess</p>
+<div class = "nav">
+  <p class = "logo">Coursuccess</p>
     <ul>
     <li><a href="/home">Home</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/timetable">Course Planner</a></li>
     <li><a href="/grades">Grades</a></li>
-    <li><a href="/calendar">Calendar</a></li>
-    <li><a href="/outro">Sign Out</a></li>
+    {% if session.student_number %} 
+      <li><a href="/login">Log In</a></li>
+      <li><a href="/register">Register</a></li>
+    {% else %}  
+      <li><a href="/signout">Sign Out</a></li>
+    {% endif %}
     </ul>
 </div>
   </body>
