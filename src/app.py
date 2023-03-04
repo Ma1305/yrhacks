@@ -365,7 +365,6 @@ def course_selection():
 
 @app.route("/grades", methods=["GET", "POST"])
 @login_required
-@teach_assist_login_required
 def grades():
     if request.method == "GET":
         return redirect("https://ta.yrdsb.ca/yrdsb/")
