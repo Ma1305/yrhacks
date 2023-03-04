@@ -90,7 +90,7 @@ def login():
         return redirect(next_url)
 
     # Redirect to home if no direction are given
-    return redirect('/')
+    return redirect('/home')
 
 
 @app.route("/register", methods=["GET", "POST"])
