@@ -50,6 +50,7 @@ def send_email(subject, sender, recipients, text, bcc=None, mail=None):
         from app import mail
     message = Message(subject, sender=sender, recipients=recipients, html=text, bcc=bcc)
     mail.send(message)
+    print("sent email")
 
 
 def create_jwt(data, secret_key, time=1800):
@@ -67,6 +68,10 @@ def get_email_pass():
     if not password:
         return -1
     return password
+
+
+def email_to_student_number(email):
+    return email.strip().replace("@gapps.yrdsb.ca", " ")
 
 
 # testing the functions

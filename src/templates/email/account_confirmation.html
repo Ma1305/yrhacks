@@ -96,17 +96,17 @@ body {
                 <pre>
 Dear {{ name }} {{ lastname }},
 
-If you have recently registered for a COURSUCCESS account, click on the following link to confirm your registration:
+If you have recently registered for a {{ WEB_NAME }} account, click on the following link to confirm your registration:
 
 {{ url_for('confirm_register', token=token, _external=True) }}
 
-Otherwise, you can remove your email from our database with the following link:
+If this was not you, you can remove your student number and email from our database with the following link:
 
 {{ url_for('cancel_register', token=token, _external=True) }}
 
 Regards,
 
-{{ CLUB_NAME }}
+{{ WEB_NAME }}
                 </pre>
             </div>
         </main>

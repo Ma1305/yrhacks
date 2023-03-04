@@ -9,6 +9,9 @@ from helpers import *
 import logging
 from initial_setup import app, validate_email
 
+# website name
+WEB_NAME = "COURSUCCESS"
+
 # setup session info
 SESSION_LIFESPAN = timedelta(days=3)
 
@@ -24,7 +27,8 @@ Session(app)
 # setup mail
 mail = Mail(app)
 
-validate_email(mail)
+
+# validate_email(mail)
 
 
 @app.route("/")
@@ -50,7 +54,7 @@ def login():
         return render_template("auth/login.html")
 
     # get the user info from database
-    rows = db.execute("SELECT * FROM users WHERE username=:student_number",
+    rows = db.execute("SELECT * FROM users WHERE student_number=:student_number",
                       student_number=request.form.get("login-studentnum"))
 
     login_check = check_login(rows)
@@ -68,6 +72,8 @@ def login():
 
     # setup session information
     session["student-number"] = request.form.get("login-studentnum")
+    session["first-name"] = rows[0]["first_name"]
+    session["last-name"] = rows[0]["last_name"]
 
     app.logger.info(f"Student number #{session['student-number']} logged in, with IP {request.remote_addr}")
 
@@ -89,9 +95,11 @@ def register():
 
     student_number = request.form.get("register-studentnum")
     password = request.form.get("register-password")
-    name = request.form.get("register-name")
+    name = request.form.get("register-firstname")
     lastname = request.form.get("register-lastname")
     confirmation = request.form.get("register-password-confirmation")  # replace name
+    print(f"register attempt with:\nname:{name}, last name:{lastname}, student number: {student_number}, "
+          f"password: {password}, confirmation pass: {confirmation}")
 
     # Ensure username is valid
     if not student_number or not verify_text(student_number):
@@ -117,22 +125,87 @@ def register():
 
     # sending the email
     token = create_jwt({'email': f"{student_number}@gapps.yrdsb.ca"}, app.config['SECRET_KEY'])
-    text = render_template('email/confirm_account.html',
-                           name=name, lastname=lastname, token=token)
+    text = render_template('email/account_confirmation.html',
+                           name=name, lastname=lastname, token=token, WEB_NAME=WEB_NAME)
 
-    db.execute(("INSERT INTO users(student_number, password, first_name, last_name) "
-                "VALUES(:student_number, :password, :firstname, :lastname"),
-               student_number=student_number, password=generate_password_hash(password), firstname=name, lastname=lastname)
+    db.execute(("INSERT INTO users(student_number, password, first_name, last_name, verified) "
+                "VALUES(:student_number, :password, :firstname, :lastname, :verified)"),
+               student_number=student_number, password=generate_password_hash(password), firstname=name,
+               lastname=lastname, verified=False)
 
     if not app.config['TESTING']:
         send_email('COURSUCCESS account confirmation',
-                   app.config['MAIL_DEFAULT_SENDER'], [f"{student_number}@gapps.yrdsb.ca"], text)
+                   app.config['MAIL_DEFAULT_SENDER'], [f"{student_number}@gapps.yrdsb.ca"], text, mail=mail)
 
     flash(('An account creation confirmation email has been sent to your gapps account. '
            'Be sure to check your spam folder!'))
     app.logger.info((f"User {name} ({lastname}) with student number #{student_number} has initiated a "
                      f"registration request, with IP {request.remote_addr}"))
     return render_template("auth/register.html")
+
+
+@app.route('/confirmregister/<token>')
+def confirm_register(token):
+    try:
+        token = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
+    except Exception as e:
+        sys.stderr.write(str(e))
+        token = 0
+
+    # invalid token
+    if not token:
+        flash("Email verification link invalid")
+        return redirect("/register")
+
+    # expired link
+    if datetime.strptime(token["expiration"], "%Y-%m-%dT%H:%M:%S.%f") < datetime.utcnow():
+        db.execute(
+            "DELETE FROM users WHERE verified=0 and student_number=:student_number",
+            student_number=email_to_student_number(token['email']))
+        flash("Email verification link expired. Please register again using the same email.")
+        return redirect("/register")
+
+    # update the account to verified
+    db.execute("UPDATE users SET verified=1 WHERE student_number=:student_number",
+               student_number=email_to_student_number(token['email']))
+
+    # Log user in
+    user = db.execute(
+        "SELECT * FROM users WHERE student_number=:student_number", student_number=token['email'].strip()
+        .replace("@gapps.yrdsb.ca", " "))[0]
+
+    session["student-number"] = user["student_number"]
+    session["first-name"] = user["first_name"]
+    session["last-name"] = user["last_name"]
+
+    app.logger.info((f"Registration confirmation for student number #{session['student-number']} from "
+                     f"IP {request.remote_addr}"))
+    return redirect("/")
+
+
+@app.route('/cancelregister/<token>')
+def cancel_register(token):
+    try:
+        token = jwt.decode(token, app.config['SECRET_KEY'], algorithms=['HS256'])
+    except Exception as e:
+        sys.stderr.write(str(e))
+        token = 0
+
+    # invalid token
+    if not token:
+        flash("Email verification link invalid", "danger")
+        return redirect("/register")
+
+    # delete data from database
+    db.execute(
+        "DELETE FROM users WHERE verified=0 and student_number=:student_number",
+        student_number=email_to_student_number(token['email']))
+
+    flash("Your registration has been successfully removed from our database.")
+    app.logger.info((f"Confirmation cancellation of student number {email_to_student_number(token['email'])} from "
+                     f"IP {request.remote_addr}"))
+
+    return redirect("/register")
 
 
 if __name__ == "__main__":
