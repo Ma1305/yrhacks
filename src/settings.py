@@ -28,9 +28,9 @@ os.makedirs(SESSION_FILE_DIR, 0o770, True)
 MAIL_SERVER = "smtp.gmail.com"
 MAIL_PORT = 587
 MAIL_USE_TLS = True
-MAIL_USERNAME = "informationsec.bss@gmail.com"
-MAIL_PASSWORD = "amltxwmlnjvzuoki"
-MAIL_DEFAULT_SENDER = ("Bayview Cyber Security Club", "informationsec.bss@gmail.com")
+MAIL_USERNAME = "email"
+MAIL_PASSWORD = "pass"
+MAIL_DEFAULT_SENDER = ("COURSUCCESS", "email")
 
 # Configure your hcaptcha settings here
 USE_CAPTCHA = False
