@@ -1,73 +1,78 @@
 <html>
 <head>
-<style>
-      @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&display=swap');
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&display=swap');
 
-body
-{
-    margin: 0;
-    padding: 0;
-    font-family: Cabin;
-}
-.text{
-    text-align: center;
-    height: 100px;
-    background: #262626;
-    color: #FFF;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Cabin;
+        }
 
-.nav{
-    background: #D61C4E;
-    color: #FFF;
-    display: flex
-}
+        .text {
+            text-align: center;
+            height: 100px;
+            background: #262626;
+            color: #FFF;
+        }
 
-.nav .logo{
-    font-family: poppins;
-    padding-left: 20px;
-    font-size: 24px;
-    margin-left: 25px
-}
+        .nav {
+            background: #D61C4E;
+            color: #FFF;
+            display: flex
+        }
 
-.nav ul{
-    display: flex;
-    width: 50%;
-    margin-left: auto
-}
+        .nav .logo {
+            font-family: poppins;
+            padding-left: 20px;
+            font-size: 24px;
+            margin-left: 25px
+        }
 
-li{
-    padding-top: 15px;
-    padding-right: 40px;
-    list-style: none
-}
+        .nav ul {
+            display: flex;
+            width: 50%;
+            margin-left: auto
+        }
 
-li a{
-  color: #FFF;
-  text-decoration: none;
-  font-weight: bold;
-}
-</style>
+        li {
+            padding-top: 15px;
+            padding-right: 40px;
+            list-style: none
+        }
+
+        li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
+<title>{% block title %}{% endblock %} | {{ CLUB_NAME }}</title>
+{% block preload %}{% endblock %}
 <body>
-<div class = "nav">
-  <p class = "logo">Coursuccess</p>
+<div class="nav">
+    <p class="logo">Coursuccess</p>
     <ul>
-    {% if not session.student_number %}
-      <li><a href="/home">Home</a></li>
-    {% else %}
-      <li><a href="/userhome">Home</a></li>
-    {% endif %}
-    <li><a href="/about">About</a></li>
-    <li><a href="/course_selection">Course Planner</a></li>
-    <li><a href="/grades">Grades</a></li>
-    <li><a href="/login">Calendar</a></li>
-    {% if not session.student_number %}
-      <li><a href="/login">Log In</a></li>
-      <li><a href="/register">Register</a></li>
-    {% else %}
-      <li><a href="/signout">Sign Out</a></li>
-    {% endif %}
+        {% if not session.student_number %}
+        <li><a href="/home">Home</a></li>
+        {% else %}
+        <li><a href="/userhome">Home</a></li>
+        {% endif %}
+        <li><a href="/about">About</a></li>
+        <li><a href="/course_selection">Course Planner</a></li>
+        <li><a href="/grades">Grades</a></li>
+        <li><a href="/login">Calendar</a></li>
+        {% if not session.student_number %}
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/register">Register</a></li>
+        {% else %}
+        <li><a href="/signout">Sign Out</a></li>
+        {% endif %}
     </ul>
 </div>
+{% block main %}{% endblock %}
+{% block script %}{% endblock %}
 </body>
 </html>
