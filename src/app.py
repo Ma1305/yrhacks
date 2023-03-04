@@ -368,7 +368,7 @@ def course_selection():
 @teach_assist_login_required
 def grades():
     if request.method == "GET":
-        return render_template("grades.html")
+        return redirect("https://ta.yrdsb.ca/yrdsb/")
 
     # Reached using POST
 
