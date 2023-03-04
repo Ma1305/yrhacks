@@ -55,11 +55,7 @@
 <div class="nav">
     <p class="logo">Coursuccess</p>
     <ul>
-        {% if not session.student_number %}
         <li><a href="/home">Home</a></li>
-        {% else %}
-        <li><a href="/userhome">Home</a></li>
-        {% endif %}
         <li><a href="/about">About</a></li>
         <li><a href="/course_selection">Course Planner</a></li>
         <li><a href="/grades">Grades</a></li>
