@@ -30,14 +30,27 @@ function reset() {
       table.rows[i].cells[j].innerHTML = "Course " + (i - 1);
     }
   }
+  for(var i=11; i<13; i++) {
+    for(var j=0; j<4; j++) {
+      table.rows[i].cells[j].innerHTML = "Summer School " + (i - 10);
+    }
+  }
+  for(var i=14; i<16; i++) {
+    for(var j=0; j<4; j++) {
+      table.rows[i].cells[j].innerHTML = "Night School " + (i - 13);
+    }
+  }
+  for(var j=0; j<4; j++) {
+    table.rows[17].cells[j].innerHTML = "Repertoire 1";
+  }
 }
 
 function standard() {
   reset();
   table.rows[2].cells[0].innerHTML = "English Gr.9 (ENG1D)";
   table.rows[2].cells[1].innerHTML = "English Gr.10 (ENG2D)";
-  table.rows[2].cells[2].innerHTML = "English Gr.11 (NBE3U)";
-  table.rows[2].cells[3].innerHTML = "English Gr.12 (NBE4U)";
+  table.rows[2].cells[2].innerHTML = "English Gr.11 (ENG3U)";
+  table.rows[2].cells[3].innerHTML = "English Gr.12 (ENG4U)";
   table.rows[3].cells[0].innerHTML = "Principles of Mathematics Gr.9 (MPM1D)";
   table.rows[3].cells[1].innerHTML = "Principles of Mathematics Gr.10 (MPM2D)";
   table.rows[3].cells[2].innerHTML = "Functions Gr.11 (MCR3U)";
