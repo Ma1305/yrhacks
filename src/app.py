@@ -42,7 +42,7 @@ def inject_user():
 def home():
     if session.get('student_number'):
         return render_template("userhome.html")
-    return render_template("navbar.html")
+    return render_template("home.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -287,7 +287,7 @@ def course_selection():
     logging.info(f"The following courses are begin passed to time table {str(courses)}")
     if request.method == "GET":
         return render_template("timetable.html", course=courses, range=range)
-    
+
     logging.info(request.form)
     logging.info(request.data)
 
