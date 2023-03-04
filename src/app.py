@@ -40,6 +40,8 @@ def inject_user():
 @app.route("/")
 @app.route("/home")
 def home():
+    if session['student_number']:
+        return render_template("userhome.html")
     return render_template("navbar.html")
 
 
