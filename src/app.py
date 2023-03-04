@@ -233,7 +233,8 @@ def teach_assist_logout():
 @app.route("/course_selection", methods=["GET", "POST"])
 @login_required
 def course_selection():
-    rows = db.execute("SELECT * FROM time_tables WHERE student_number=:student_number", student_number=session["student_number"])
+    rows = db.execute("SELECT * FROM time_tables WHERE student_number=:student_number",
+                      student_number=session["student-number"])
 
     courses = []
     # Check if there is a timetable
