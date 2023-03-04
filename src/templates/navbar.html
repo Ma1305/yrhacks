@@ -1,6 +1,6 @@
 <html>
-  <head>
-    <script>
+<head>
+<style>
       @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&display=swap');
 
 body
@@ -46,9 +46,9 @@ li a{
   text-decoration: none;
   font-weight: bold;
 }
-    </script>
-  </head>
-  <body>
+</style>
+</head>
+<body>
 <div class = "nav">
   <p class = "logo">Coursuccess</p>
     <ul>
@@ -56,6 +56,7 @@ li a{
     <li><a href="/about">About</a></li>
     <li><a href="/timetable">Course Planner</a></li>
     <li><a href="/grades">Grades</a></li>
+    <li><a href="/login">Calendar</a></li>
     {% if session.student_number %} 
       <li><a href="/login">Log In</a></li>
       <li><a href="/register">Register</a></li>
@@ -64,5 +65,5 @@ li a{
     {% endif %}
     </ul>
 </div>
-  </body>
+</body>
 </html>
