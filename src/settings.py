@@ -1,6 +1,7 @@
 import os
 import secrets
 import sys
+from helpers import get_email_pass
 
 # DO NOT MODIFY THESE SETTINGS! Scroll down to line 24 for settings that you should change
 # The secret key is located in secret_key.txt by default
@@ -28,28 +29,22 @@ os.makedirs(SESSION_FILE_DIR, 0o770, True)
 MAIL_SERVER = "smtp.gmail.com"
 MAIL_PORT = 587
 MAIL_USE_TLS = True
-MAIL_USERNAME = "email"
-MAIL_PASSWORD = "pass"
-MAIL_DEFAULT_SENDER = ("COURSUCCESS", "email")
+MAIL_USERNAME = "coursuccess.yrhack@gmail.com"
+MAIL_PASSWORD = get_email_pass()
+MAIL_DEFAULT_SENDER = ("COURSUCCESS", "coursuccess.yrhack@gmail.com")
 
 # Configure your hcaptcha settings here
 USE_CAPTCHA = False
 HCAPTCHA_SECRET = "0xdeADbeEf"
 HCAPTCHA_SITE = "site_key"
 
-# Configure other settings here
-"""
-CLUB_NAME should store the name of your CTF club. It will be displayed in the navbar,
-footer, and page title.
-"""
-CLUB_NAME = "Bayview Cyber Security Club"
 
 """
 LOGGING_FILE_LOCATION should store a path (relative or absolute) to the location of your
 site logs. It is recommended to leave it alone, however, if you change it, you should also
 change it in daily_tasks.py.
 """
-LOGGING_FILE_LOCATION = "logs/application.log"
+LOGGING_FILE_LOCATION = "logs/server.log"
 
 """
 USE_HOMEPAGE controls whether a homepage is shown to unregistered users. If you would like

@@ -1,0 +1,134 @@
+2023-03-04 00:41:42,030 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 00:41:42,030 WARNING root MainThread : [Errno 61] Connection refused
+2023-03-04 00:41:42,045 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 00:41:42,045 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 00:41:42,047 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 00:41:42,887 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 00:41:42,887 WARNING root MainThread : [Errno 61] Connection refused
+2023-03-04 00:41:42,896 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 00:41:42,910 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:16:45,443 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:16:45,444 WARNING root MainThread : [Errno 61] Connection refused
+2023-03-04 01:16:45,457 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:16:45,457 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:16:45,458 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:16:46,224 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:16:46,224 WARNING root MainThread : [Errno 61] Connection refused
+2023-03-04 01:16:46,234 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:16:46,249 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:18:09,489 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:18:09,489 WARNING root MainThread : cannot import name 'mail' from 'app' (/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py)
+2023-03-04 01:18:09,501 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:18:09,501 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:18:09,502 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:18:10,277 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:18:10,277 WARNING root MainThread : cannot import name 'mail' from 'app' (/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py)
+2023-03-04 01:18:10,285 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:18:10,293 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:23:14,339 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:23:14,339 WARNING root MainThread : cannot import name 'mail' from 'app' (/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py)
+2023-03-04 01:23:14,351 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:23:14,352 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:23:14,353 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:23:15,123 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:23:15,123 WARNING root MainThread : cannot import name 'mail' from 'app' (/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py)
+2023-03-04 01:23:15,131 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:23:15,138 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:30:50,832 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:30:52,325 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:30:52,335 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:30:52,335 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:30:52,336 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:30:54,646 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:30:56,288 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:30:56,296 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:30:56,305 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:36:43,607 INFO werkzeug MainThread :  * Detected change in '/Users/manifatemi/programing-projects/hackathon/yrhacks/src/app.py', reloading
+2023-03-04 01:36:43,735 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:36:45,927 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:36:45,936 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:39:39,423 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:39:40,786 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:40:34,269 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:40:34,270 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:40:34,271 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:40:35,179 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:40:35,188 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:41:30,239 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:41:31,887 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:42:05,387 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:42:05,388 WARNING root MainThread : Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-03-04 01:42:05,851 WARNING root MainThread : Settings validation: Email credentials invalid.
+2023-03-04 01:42:05,851 WARNING root MainThread : Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2023-03-04 01:44:12,508 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:44:14,373 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:45:42,425 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:45:44,180 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:47:24,141 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:47:25,815 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:49:07,477 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:49:07,489 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:49:07,490 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:49:07,491 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:49:09,736 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:49:09,742 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:49:09,752 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:50:18,958 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:50:18,968 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:50:18,968 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:50:18,970 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:50:21,329 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:50:21,337 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:50:21,349 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:50:29,296 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 01:50:29] "GET / HTTP/1.1" 200 -
+2023-03-04 01:51:15,890 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:51:15,898 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:51:15,898 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:51:15,900 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:51:18,014 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:51:18,022 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:51:18,032 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:51:18,191 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 01:51:18] "GET / HTTP/1.1" 200 -
+2023-03-04 01:51:22,508 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 01:51:22] "[33mGET /register.html HTTP/1.1[0m" 404 -
+2023-03-04 01:51:27,923 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 01:51:27] "[33mGET /register.html HTTP/1.1[0m" 404 -
+2023-03-04 01:52:27,980 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:52:27,988 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:52:27,988 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:52:27,989 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:52:30,058 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:52:30,065 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:52:30,072 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:52:31,285 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 01:52:31] "GET / HTTP/1.1" 200 -
+2023-03-04 01:52:33,355 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 01:52:33] "GET /login HTTP/1.1" 200 -
+2023-03-04 01:52:35,951 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 01:52:35] "GET /register HTTP/1.1" 200 -
+2023-03-04 01:52:39,751 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 01:52:39] "GET /login HTTP/1.1" 200 -
+2023-03-04 01:52:41,536 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 01:52:41] "GET /register HTTP/1.1" 200 -
+2023-03-04 01:58:16,685 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:58:16,697 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 01:58:16,697 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 01:58:16,699 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 01:58:19,272 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 01:58:19,279 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 01:58:19,289 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 01:58:56,472 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 01:58:56] "GET / HTTP/1.1" 200 -
+2023-03-04 01:58:56,632 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 01:58:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-04 01:58:57,677 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 01:58:57] "GET /login HTTP/1.1" 200 -

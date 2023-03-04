@@ -3,6 +3,7 @@ from flask_mail import Message
 from functools import wraps
 from datetime import datetime, timedelta
 import re
+import jwt
 
 
 def login_required(f):
@@ -10,7 +11,7 @@ def login_required(f):
         Decorate routes to require login.
 
         http://flask.pocoo.org/docs/1.0/patterns/viewdecorators/
-        """
+    """
 
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -44,8 +45,9 @@ def verify_text(text):
     return bool(re.match(r'^[\w\-]+$', text))
 
 
-def send_email(subject, sender, recipients, text, bcc=None):
-    from app import mail
+def send_email(subject, sender, recipients, text, bcc=None, mail=None):
+    if not mail:
+        from app import mail
     message = Message(subject, sender=sender, recipients=recipients, html=text, bcc=bcc)
     mail.send(message)
 
@@ -56,3 +58,18 @@ def create_jwt(data, secret_key, time=1800):
     """
     data['expiration'] = (datetime.utcnow() + timedelta(seconds=time)).isoformat()
     return jwt.encode(data, secret_key, algorithm='HS256')
+
+
+# if password does not exist returns -1
+def get_email_pass():
+    with open("private_data/email_password.txt") as file:
+        password = file.readline()
+    if not password:
+        return -1
+    return password
+
+
+# testing the functions
+if __name__ == "__main__":
+    # get_email_password test
+    print(get_email_pass())
