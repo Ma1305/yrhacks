@@ -281,7 +281,7 @@ def course_selection():
         db.execute(("INSERT INTO time_tables(student_number, courses) "
                     "VALUES(:student_number, :courses)"),
                    student_number=session['student_number'], courses=courses_text)
-    
+
     logging.info(f"The following courses are begin passed to time table {str(courses)}")
     if request.method == "GET":
         return render_template("timetable.html", course=courses, range=range)
@@ -323,6 +323,9 @@ def course_selection():
     courses_text = str(courses).replace("[", "").replace("]", "")
     db.execute("UPDATE time_tables SET courses=:courses WHERE student_number=:student_number", courses=courses_text,
                student_number=session["student_number"])
+
+    flash("Your time table has been saved successfully!")
+    return render_template("timetable.html", course=courses, range=range)
 
 
 @app.route("/grades", methods=["GET", "POST"])
