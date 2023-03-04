@@ -8,6 +8,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from helpers import *
 import logging
 from initial_setup import app, validate_email
+import json
 
 # website name
 WEB_NAME = "COURSUCCESS"
@@ -230,25 +231,67 @@ def teach_assist_logout():
 
 
 @app.route("/course_selection", methods=["GET", "POST"])
+@login_required
 def course_selection():
+    rows = db.execute("SELECT * FROM time_tables WHERE student_number=:student_number", student_number=session["student_number"])
+
+    courses = []
+    # Check if there is a timetable
+    if len(rows) > 0:
+        courses = rows[0]["courses"].split(", ")
+
+    else:
+        for i in range(18):
+            for j in range(4):
+                if i < 10:
+                    courses.append(f"Course {int(i/4)}")
+                elif i < 13:
+                    courses.append(f"Summer Course {int(i/4)}")
+                elif i < 16:
+                    courses.append(f"Night Course {int(i/4)}")
+                else:
+                    courses.append(f"Repertoire Course {int(i / 4)}")
+
     if request.method == "GET":
-        return render_template("timetable.html", course=[list(range(4)) for i in range(18)], range=range)
+        return render_template("timetable.html", course=courses, range=range)
 
     # Reached using POST
-    offset = 0
-    day_school = []
+    offset = 16
+    i = 0
+    courses = []
+    courses += list(range(16))
     # getting day school
     for i in range(32):
-        day_school.append(request.form.get(str(i)))
+        courses.append(request.form.get(str(i)))
 
-    offset += 32
-    summer_school = []
+    courses += list(range(8))
+    offset += 8
     # getting summer school
-    for i in range(16):
-        summer_school.append(request.form.get(str(i+offset)))
+    for i in range(i, i+16):
+        courses.append(request.form.get(str(i+offset)))
 
+    courses += list(range(8))
+    offset += 8
+    # getting summer school
+    for i in range(i, i + 16):
+        courses.append(request.form.get(str(i + offset)))
 
+    courses += list(range(8))
+    offset += 8
+    # getting night school
+    for i in range(i, i + 16):
+        courses.append(request.form.get(str(i + offset)))
 
+    courses += list(range(8))
+    offset += 8
+    # getting repertoire school
+    for i in range(i, i + 8):
+        courses.append(request.form.get(str(i + offset)))
+
+    # writing the updated courses into database
+    courses_text = str(courses).replace("[", "").replace("]", "")
+    db.execute("UPDATE time_tables SET courses=:courses WHERE student_number=:student_number", courses=courses_text,
+               student_number=session["student_number"])
 
 
 @app.route("/grades", methods=["GET", "POST"])
