@@ -277,6 +277,11 @@ def course_selection():
                 else:
                     courses[i].append(f"Repertoire Course {num}")
 
+        courses_text = str(courses).replace("[", "").replace("]", "")
+        db.execute(("INSERT INTO time_tables(student_number, courses) "
+                    "VALUES(:student_number, :courses)"),
+                   student_number=session['student_number'], courses=courses_text)
+    
     logging.info(f"The following courses are begin passed to time table {str(courses)}")
     if request.method == "GET":
         return render_template("timetable.html", course=courses, range=range)
