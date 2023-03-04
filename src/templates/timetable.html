@@ -19,24 +19,75 @@
     <option value="rep">Repertoire</option>
   </select>
   <br>
+  <label>Grade:</label>
+  <select id="grade" style="font-size: 16px;">
+    <option value=0>Grade 9</option>
+    <option value=1>Grade 10</option>
+    <option value=2>Grade 11</option>
+    <option value=3>Grade 12</option>
+  </select>
   <label>Course Block:</label>
   <select id="courseblock" style="font-size: 16px;">
-    <option value="Block1">Block 1</option>
-    <option value="Block2">Block 2</option>
-    <option value="Block3">Block 3</option>
-    <option value="Block4">Block 4</option>
-    <option value="Block5">Block 5</option>
-    <option value="Block6">Block 6</option>
-    <option value="Block7">Block 7</option>
-    <option value="Block8">Block 8</option>
+    <option value=1>Block 1</option>
+    <option value=2>Block 2</option>
+    <option value=3>Block 3</option>
+    <option value=4>Block 4</option>
+    <option value=5>Block 5</option>
+    <option value=6>Block 6</option>
+    <option value=7>Block 7</option>
+    <option value=8>Block 8</option>
   </select>
   <br>
-  <label>New Course Code:</label>
-  <input type="text" id="newcourse" placeholder="MCV4U">
+  <label>New Course:</label>
+  <select id="newcourse" style="font-size: 16px;">
+      <optgroup label="Arts">
+        <option value="Drama Gr.9 (ADA1O)">Drama Gr.9 (ADA1O)</option>
+        <option value="Drama Gr.10 (ADA2O)">Drama Gr.10 (ADA2O)</option>
+        <option value="Drama Gr.11 (ADA3M)">Drama Gr.11 (ADA3M)</option>
+        <option value="Drama Gr.11 (ADA3O)">Drama Gr.11 (ADA3O)</option>
+        <option value="Drama Gr.12 (ADA4E)">Drama Gr.12 (ADA4E)</option>
+        <option value="Music Gr.9 (AMU1O)">Music Gr.9 (AMU1O)</option>
+        <option value="Music Gr.10 (AMU2O)">Music Gr.10 (AMU2O)</option>
+        <option value="Music Gr.11 (AMU3M)">Music Gr.11 (AMU3M)</option>
+        <option value="Music Gr.12 (AMU4M)">Music Gr.12 (AMU4M)</option>
+        <option value="Visual Arts Gr.9 (AVI1O)">Visual Arts Gr.9 (AVI1O)</option>
+        <option value="Visual Arts Gr.10 (AVI2O)">Visual Arts Gr.10 (AVI2O)</option>
+        <option value="Visual Arts Gr.11 (AVI3M)">Visual Arts Gr.11 (AVI3M)</option>
+        <option value="Visual Arts Gr.11 (AVI3O)">Visual Arts Gr.11 (AVI3O)</option>
+        <option value="Visual Arts Gr.12 (AVI4M)">Visual Arts Gr.12 (AVI4M)</option>
+        <option value="Visual Arts Gr.12 (AVI4E)">Visual Arts Gr.12 (AVI4E)</option>
+      </optgroup>
+      <optgroup label="Business Studies">
+        <option value="Information and Communication Technology in Business Gr.9 (BTT1O)">Information and Communication Technology in Business Gr.9 (BTT1O1)</option>
+        <option value="Entrepreneurship: The Venture Gr.11 (BDI3C)">Entrepreneurship: The Venture Gr.11 (BDI3C1)</option>
+        <option value="Financial Accounting Fundamentals Gr.11 (BAF3M)">Financial Accounting Fundamentals Gr.11 (BAF3M)</option>
+        <option value="Marketing: Goods Gr.11 (BMI3C)">Marketing: Goods Gr.11 (BMI3C)</option>
+        <option value="Financial Accounting Principles Gr.12 (BAT4M)">Financial Accounting Principles Gr.12 (BAT4M)</option>
+        <option value="International Business Fundamentals Gr.12 (BBB4M)">International Business Fundamentals Gr.12 (BBB4M)</option>
+        <option value="Business Leadership: Management Fundamentals Gr.12 (BOH4M)">Business Leadership: Management Fundamentals Gr.12 (BOH4M)</option>
+      </optgroup>
+      <optgroup label="Canadian and World Studies">
+        <option value="Understanding Canadian Law Gr.11 (CLU3M)">Understanding Canadian Law Gr.11 (CLU3M)</option>
+        <option value="Canadian and International Law Gr.12 (CLN4U)">Canadian and International Law Gr.12 (CLN4U)</option>
+        <option value="Issues in Canadian Geography Gr.9 (CGC1D)">Issues in Canadian Geography Gr.9 (CGC1D)</option>
+        <option value="Travel and Tourism: A Geographic Perspective Gr.11 (CGG3O)">Travel and Tourism: A Geographic Perspective Gr.11 (CGG3O)</option>
+        <option value="World Issues: A Geographic Analysis Gr.12 (CGW4U)">World Issues: A Geographic Analysis Gr.12 (CGW4U)</option>
+        <option value="Canadian History Since World War I Gr.10 (CHC2D)">Canadian History Since World War I Gr.10 (CHC2D)</option>
+        <option value="Canadian History Gr.10 (CHC2L)">Canadian History Gr.10 (CHC2L)</option>
+        <option value="World History Since 1900: Global & Regional Interactions Gr.11 (CHT3O)">World History Since 1900: Global & Regional Interactions Gr.11 (CHT3O)</option>
+        <option value="World History to the End of the 15th Century Gr.11 (CHW3M)">World History to the End of the 15th Century Gr.11 (CHW3M)</option>
+        <option value="World History Since the Fifteenth Century Gr.12 (CHY4U)">World History Since the Fifteenth Century Gr.12 (CHY4U)</option>
+        <option value="Analysing Current Economic Issues Gr.12 (CIA4U)">Analysing Current Economic Issues Gr.12 (CIA4U)</option>
+        <option value="The Individual and the Economy Gr.11 (CIE3M)">The Individual and the Economy Gr.11 (CIE3M)</option>
+        <option value="Canadian and World Politics Gr.12 (CPW4U)">Canadian and World Politics Gr.12 (CPW4U)</option>
+      </optgroup>
+    </select>
   <br>
-  <button>Update</button>
+  <button onclick="reset()">Reset</button>
+  <button onclick="standard()">Standard</button>
+  <button onclick="update()">Update</button>
   <br><br>
-  <table border="2">
+  <table border="2" id="table">
     <tr>
       <td align="center" height="50" width="150"><b>Grade 9</b></td>
       <td align="center" height="50" width="150"><b>Grade 10</b></td>
@@ -337,35 +388,21 @@
       </optgroup>
     </select>
     <br>
-    <label style="font-size: 20px;">5. Does your school offer AP (Advanced Placement) program? If yes, are you interested in enrolling in the program?</label>
-    <select id="question5" style="font-size: 16px;">
-      <option value="yesap">Yes</option>
-      <option value="noap">Not interested / Not offered</option>
-    </select>
-    <br>
-    <label style="font-size: 20px;">6. Select the preferred IB (International Baccalaureate) program type</label>
-    <select id="question6" style="font-size: 16px;">
-      <option value="hlib">Higher Level (HL)</option>
-      <option value="slib">Standard Level (SL)</option>
-      <option value="npib">No Preference</option>
-      <option value="noib">Not in IB / Not offered</option>
-    </select>
-    <br>
-    <label style="font-size: 20px;">7. Select your preferred pathway</label>
+    <label style="font-size: 20px;">5. Select your preferred pathway</label>
     <select id="question7" style="font-size: 16px;">
       <option value="unipathway">University</option>
       <option value="collegepathway">College</option>
       <option value="workplacepathway">Workplace</option>
     </select>
     <br>
-    <label style="font-size: 20px;">8. If you are going to Gr. 12 or above in the following year, how many spare do you wish to have?</label>
+    <label style="font-size: 20px;">6. If you are going to Gr. 12 or above in the following year, how many spare do you wish to have?</label>
     <select id="question8" style="font-size: 16px;">
       <option value="zerospare">0</option>
       <option value="onespare">1</option>
       <option value="twospare">2</option>
     </select>
     <br>
-    <label style="font-size: 20px;">9. How many courses are you willing to fast-track (maximum)?</label>
+    <label style="font-size: 20px;">7. How many courses are you willing to fast-track (maximum)?</label>
     <select id="question9" style="font-size: 16px;">
       <option value="zerofast">0</option>
       <option value="onefast">1</option>
@@ -375,7 +412,7 @@
       <option value="fivefast">5</option>
     </select>
     <br>
-    <label style="font-size: 20px;">10. Are you planning to join the repertoire?</label>
+    <label style="font-size: 20px;">8. Are you planning to join the repertoire?</label>
     <select id="question10" style="font-size: 16px;">
       <option value="yesrep">Yes</option>
       <option value="norep">No</option>
