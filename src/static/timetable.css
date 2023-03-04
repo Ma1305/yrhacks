@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  border: none;
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  background-color: #477eff;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.button:hover {
+  background-color: #99b8ff;
+}
+
+.collapseField {
+  border: none;
+  background-color: #a5a4f9;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+}
+
+.collapseField:hover, active {
+  background-color: #807efb;
+}
+
+.surveyQuestion {
+  display: none;
+  background-color: #d7d6ff;;
+}
+
+h3 {
+  display: inline;
+}
