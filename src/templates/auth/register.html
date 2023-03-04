@@ -3,7 +3,15 @@
 <body>
 <div id = "registration-portal">
   <h1>Create a New Account</h1>
-  <form method="post">
+  <form action="INSERT LINK HERE">
+  <label for="firstname">First Name:</label>
+   <br>
+  <input type="text" id="firstname" name="register-firstname"required>
+   <br>
+    <label for="lastname">Last Name:</label>
+   <br>
+  <input type="text" id="lastname" name="register-lastname"required>
+   <br>
   <label for="username">Student Number:</label>
    <br>
   <input type="text" id="studentnum" name="register-studentnum"required>
@@ -12,6 +20,9 @@
    <br>
   <input type="password" id="password" name="register-password" required>
    <br>
+   <label for="password-confirmation">Password Confirmation:</label>
+   <br>
+  <input type="password" id="password-confirmation" name="register-password-confirmation" required>
    <br>
   <input type="submit" value="Submit">
   </form> 
