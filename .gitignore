@@ -3,3 +3,4 @@ __pycache__
 session
 logs
 private_data
+.DS_Store

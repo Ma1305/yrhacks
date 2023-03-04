@@ -41,7 +41,7 @@ def inject_user():
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("portal.html")
+    return render_template("navbar.html", session=session)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -78,11 +78,11 @@ def login():
     # user logged in
 
     # setup session information
-    session["student-number"] = request.form.get("login-studentnum")
+    session["student_number"] = request.form.get("login-studentnum")
     session["first-name"] = rows[0]["first_name"]
     session["last-name"] = rows[0]["last_name"]
 
-    app.logger.info(f"Student number #{session['student-number']} logged in, with IP {request.remote_addr}")
+    app.logger.info(f"Student number #{session['student_number']} logged in, with IP {request.remote_addr}")
 
     # Redirect user to the next page
     next_url = request.form.get("next")
@@ -91,6 +91,12 @@ def login():
 
     # Redirect to home if no direction are given
     return redirect('/home')
+
+
+@app.route("/signout")
+def logout():
+    session.clear()
+    return redirect("/")
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -181,11 +187,11 @@ def confirm_register(token):
         "SELECT * FROM users WHERE student_number=:student_number", student_number=token['email'].strip()
         .replace("@gapps.yrdsb.ca", " "))[0]
 
-    session["student-number"] = user["student_number"]
+    session["student_number"] = user["student_number"]
     session["first-name"] = user["first_name"]
     session["last-name"] = user["last_name"]
 
-    app.logger.info((f"Registration confirmation for student number #{session['student-number']} from "
+    app.logger.info((f"Registration confirmation for student number #{session['student_number']} from "
                      f"IP {request.remote_addr}"))
     return redirect("/")
 
@@ -234,7 +240,7 @@ def teach_assist_logout():
 @login_required
 def course_selection():
     rows = db.execute("SELECT * FROM time_tables WHERE student_number=:student_number",
-                      student_number=session["student-number"])
+                      student_number=session["student_number"])
 
     courses = [[]]
     # Check if there is a timetable
