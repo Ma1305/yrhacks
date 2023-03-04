@@ -248,7 +248,7 @@ def course_selection():
 
     else:
         [courses.append([]) for i in range(18)]
-        num = 0
+        num = -2
         for i in range(18):
             num += 1
             for j in range(4):
@@ -269,7 +269,7 @@ def course_selection():
                 # Night courses
                 elif i < 16:
                     courses[i].append(f"Night Course {num}")
-                elif i == 13 and j == 0:
+                elif i == 16 and j == 0:
                     courses.append([])
                     num = 0
 
