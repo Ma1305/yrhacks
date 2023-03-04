@@ -1,226 +1,253 @@
-<html>
-<head>
-<script>
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Open+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&family=Ubuntu&display=swap');
+{% extends "navbar.html" %}
 
-body {
-  color: #2c3e50;
-  background: #ecf0f1;
-  padding: 0 1em 1em;
-}
+{% block title %}Home{% endblock %}
 
-h1 {
-  margin: 0;
-  line-height: 2;
-  text-align: center;
-}
 
-h2 {
-  margin: 0 0 0.5em;
-  font-weight: normal;
-}
+{% block payload %}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Open+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&family=Ubuntu&display=swap');
 
-input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
+    body {
+        color: #2c3e50;
+        background: #ecf0f1;
+        padding: 0 1em 1em;
+    }
 
-.row {
-  display: flex;
-}
-.row .col {
-  flex: 1;
-}
-.row .col:last-child {
-  margin-left: 1em;
-}
+    h1 {
+        margin: 0;
+        line-height: 2;
+        text-align: center;
+    }
 
-.tabs {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-}
+    h2 {
+        margin: 0 0 0.5em;
+        font-weight: normal;
+    }
 
-.tab {
-  font-family: poppins;
-  margin-left: 2%;
-  border-radius: 8px;
-  border-style: solid;
-  border-weight: 2px;
-  border-color: white;
-  width: 96%;
-  color: white;
-  overflow: hidden;
-}
-.tab-label {
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  background: #FEB139;
-  font-weight: bold;
-  cursor: pointer;
-  /* Icon */
-}
-.tab-label:hover {
-  background: #b17b27;
-}
-.tab-label::after {
-  content: "❯";
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  transition: all 0.35s;
-}
-.tab-content {
-  font-family: Source Sans Pro;
-  max-height: 0;
-  padding: 0 1em;
-  color: #2c3e50;
-  background: white;
-  transition: all 0.35s;
-}
-.tab-close {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
-  background: #b17b27;
-  cursor: pointer;
-}
-.tab-close:hover {
-  background: #b17b27;
-}
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
 
-input:checked + .tab-label {
-  background: #b17b27;
-}
-input:checked + .tab-label::after {
-  transform: rotate(90deg);
-}
-input:checked ~ .tab-content {
-  max-height: 100vh;
-  padding: 1em;
-}
+    .row {
+        display: flex;
+    }
 
-body
-{
-    margin: 0;
-    padding: 0;
-    color: white;
-    background-color: #293462;
-    font-family: Cabin;
-}
+    .row .col {
+        flex: 1;
+    }
 
-.text{
-    text-align: center;
-    height: 100px;
-    background: #262626;
-    color: #FFF;
-}
+    .row .col:last-child {
+        margin-left: 1em;
+    }
 
-.nav{
-    background: #D61C4E;
-    color: #FFF;
-    display: flex
-}
+    .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    }
 
-.nav .logo{
-    font-family: poppins;
-    padding-left: 20px;
-    font-size: 24px;
-    margin-left: 25px
-}
+    .tab {
+        font-family: poppins;
+        margin-left: 2%;
+        border-radius: 8px;
+        border-style: solid;
+        border-weight: 2px;
+        border-color: white;
+        width: 96%;
+        color: white;
+        overflow: hidden;
+    }
 
-.nav ul{
-    display: flex;
-    width: 50%;
-    margin-left: auto
-}
+    .tab-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #FEB139;
+        font-weight: bold;
+        cursor: pointer;
+        /* Icon */
+    }
 
-li{
-    padding-top: 15px;
-    padding-right: 40px;
-    list-style: none
-}
+    .tab-label:hover {
+        background: #b17b27;
+    }
 
-li a{
-  color: #FFF;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .tab-label::after {
+        content: "❯";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all 0.35s;
+    }
 
-h1{
-  margin-top: 50px;
-  font-family: poppins;
-  text-align: center;
-  font-weight: 700;
-}
+    .tab-content {
+        font-family: Source Sans Pro;
+        max-height: 0;
+        padding: 0 1em;
+        color: #2c3e50;
+        background: white;
+        transition: all 0.35s;
+    }
 
-p{
-  text-align: center;
-  font-family: Ubuntu;
-  padding: 10px;
-  line-height: 25px;
-}
+    .tab-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: #b17b27;
+        cursor: pointer;
+    }
 
-.boxes{
-  border-weight: 20px;
-  background-color: #D61C4E;
-  padding: 20px;
-  text-alight: center;
-  margin-top: 40px;
-  margin-bottom: 70px;
-}
+    .tab-close:hover {
+        background: #b17b27;
+    }
 
-</script>
-</head>
-<body>
-<div class = "nav">
-  <p class = "logo">Coursuccess</p>
+    input:checked + .tab-label {
+        background: #b17b27;
+    }
+
+    input:checked + .tab-label::after {
+        transform: rotate(90deg);
+    }
+
+    input:checked ~ .tab-content {
+        max-height: 100vh;
+        padding: 1em;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: #293462;
+        font-family: Cabin;
+    }
+
+    .text {
+        text-align: center;
+        height: 100px;
+        background: #262626;
+        color: #FFF;
+    }
+
+    .nav {
+        background: #D61C4E;
+        color: #FFF;
+        display: flex
+    }
+
+    .nav .logo {
+        font-family: poppins;
+        padding-left: 20px;
+        font-size: 24px;
+        margin-left: 25px
+    }
+
+    .nav ul {
+        display: flex;
+        width: 50%;
+        margin-left: auto
+    }
+
+    li {
+        padding-top: 15px;
+        padding-right: 40px;
+        list-style: none
+    }
+
+    li a {
+        color: #FFF;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-family: poppins;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    p {
+        text-align: center;
+        font-family: Ubuntu;
+        padding: 10px;
+        line-height: 25px;
+    }
+
+    .boxes {
+        border-weight: 20px;
+        background-color: #D61C4E;
+        padding: 20px;
+        text-alight: center;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+</style>
+{% endblock %}
+
+
+{% main %}
+<div class="nav">
+    <p class="logo">Coursuccess</p>
     <ul>
-    <li><a href="/home">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/timetable">Course Planner</a></li>
-    <li><a href="/grades">Grades</a></li>
-      <li><a href="/login">Log In</a></li>
-      <li><a href="/register">Register</a></li>
-      <li><a href="/signout">Sign Out</a></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/timetable">Course Planner</a></li>
+        <li><a href="/grades">Grades</a></li>
+        <li><a href="/login">Log In</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/signout">Sign Out</a></li>
     </ul>
 </div>
 
 <h1>Welcome to Coursuccess</h1>
 
-<p class = "boxes">
-  Welcome to our comprehensive course selection and grade viewing website! Our platform offers a variety of features to ensure that you have the resources you need to choose the right courses and track your grades throughout the semester. Click the register button to join our community today or sign in if you are a user already.
+<p class="boxes">
+    Welcome to our comprehensive course selection and grade viewing website! Our platform offers a variety of features
+    to ensure that you have the resources you need to choose the right courses and track your grades throughout the
+    semester. Click the register button to join our community today or sign in if you are a user already.
 </p>
 
 
 <div class="row">
-  <div class="col">
-    <div class="tabs">
-      <div class="tab">
-        <input type="checkbox" id="chck1">
-        <label class="tab-label" for="chck1">Survey</label>
-        <div class="tab-content">
-          One of our unique features is our course recommendation survey. We understand that choosing the right courses can be overwhelming, especially with so many options available. That's why we created a survey that takes into account your interests, academic goals, and learning style to recommend courses that would be a good fit for you. Our survey is easy to use and takes just a few minutes to complete. Once you submit your answers, our algorithm analyzes your responses and generates a list of recommended courses based on your preferences. You can then explore these courses further and make an informed decision about which ones to take.
+    <div class="col">
+        <div class="tabs">
+            <div class="tab">
+                <input type="checkbox" id="chck1">
+                <label class="tab-label" for="chck1">Survey</label>
+                <div class="tab-content">
+                    One of our unique features is our course recommendation survey. We understand that choosing the
+                    right courses can be overwhelming, especially with so many options available. That's why we created
+                    a survey that takes into account your interests, academic goals, and learning style to recommend
+                    courses that would be a good fit for you. Our survey is easy to use and takes just a few minutes to
+                    complete. Once you submit your answers, our algorithm analyzes your responses and generates a list
+                    of recommended courses based on your preferences. You can then explore these courses further and
+                    make an informed decision about which ones to take.
+                </div>
+            </div>
+            <div class="tab">
+                <input type="checkbox" id="chck2">
+                <label class="tab-label" for="chck2">Course Planner</label>
+                <div class="tab-content">
+                    With our user-friendly interface, you can browse through various courses offered by your school and
+                    select the ones that align with your interests and academic goals. We provide detailed information
+                    about each course, including the course name, grade and code.
+                </div>
+            </div>
+            <div class="tab">
+                <input type="checkbox" id="chck3">
+                <label class="tab-label" for="chck3">Grades</label>
+                <div class="tab-content">
+                    In addition to our course recommendation survey, our platform also offers detailed course
+                    descriptions and reviews from other students to help you make informed decisions about your course
+                    selections. Once you have chosen your courses, you can easily view your grades and track your
+                    academic progress throughout the semester.
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="tab">
-        <input type="checkbox" id="chck2">
-        <label class="tab-label" for="chck2">Course Planner</label>
-        <div class="tab-content">
-          With our user-friendly interface, you can browse through various courses offered by your school and select the ones that align with your interests and academic goals. We provide detailed information about each course, including the course name, grade and code.
-        </div>
-      </div>
-      <div class="tab">
-        <input type="checkbox" id="chck3">
-        <label class="tab-label" for="chck3">Grades</label>
-        <div class="tab-content">
-          In addition to our course recommendation survey, our platform also offers detailed course descriptions and reviews from other students to help you make informed decisions about your course selections. Once you have chosen your courses, you can easily view your grades and track your academic progress throughout the semester.
-        </div>
-      </div>
     </div>
-  </div>
-</body>
-</html>
+</div>
+{% endblock %}
