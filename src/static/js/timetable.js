@@ -14,7 +14,7 @@ function update() {
   var block = parseInt(document.getElementById("courseblock").value);
   var code = document.getElementById("newcourse").value;
   if(block <= 8 && type == "dayschool") {
-    table.rows[block + 1].cells[grade].innerHTML = code;
+    table.rows[block + 1].cells[grade].getElementsByClassName("fake-input-field").value = code;
   } else if(block <= 2 && type == "summerschool") {
     table.rows[block + 10].cells[grade].innerHTML = code;
   } else if(block <= 2 && type == "nightschool") {
