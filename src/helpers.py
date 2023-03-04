@@ -27,7 +27,9 @@ def teach_assist_login_required(f):
 
 
 # three possible codes: 1 good, -1 no exist, -2 wrong password, -3 not verified
-def check_login(rows):
+def check_login(rows, logger=None):
+    '''if logger:
+        logger.info(f"login attempt to student number {request.form.get()})'''
     # check if user exists
     if len(rows) == 0:
         return -1

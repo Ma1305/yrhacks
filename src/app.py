@@ -218,7 +218,8 @@ def cancel_register(token):
 @login_required
 def teach_assist_login():
     if request.method == "GET":
-        return render_template("auth/teach_assist_login.html")
+        # data["course"][]["course_name"] data["course_grade"] data["course_code"]
+        return render_template("auth/teach_assist_login.html", name=["name", "random"])
 
     # Reached using POST
 
@@ -229,9 +230,25 @@ def teach_assist_logout():
 
 
 @app.route("/course_selection", methods=["GET", "POST"])
-@login_required
 def course_selection():
-    pass
+    if request.method == "GET":
+        return render_template("timetable.html", course=[list(range(4)) for i in range(18)], range=range)
+
+    # Reached using POST
+    offset = 0
+    day_school = []
+    # getting day school
+    for i in range(32):
+        day_school.append(request.form.get(str(i)))
+
+    offset += 32
+    summer_school = []
+    # getting summer school
+    for i in range(16):
+        summer_school.append(request.form.get(str(i+offset)))
+
+
+
 
 
 @app.route("/grades", methods=["GET", "POST"])
