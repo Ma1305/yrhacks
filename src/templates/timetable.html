@@ -402,8 +402,9 @@
 <button onclick="update()">Update</button>
 <br><br>
 
-<table border="2" id="table">
-    <form method="post" , action="/course_selection">
+<form method="post" , action="/course_selection">
+    <table border="2" id="table">
+
         {% for i in range(18) %}
         <tr>
             {% for j in range(4) %}
@@ -429,9 +430,10 @@
             {% endfor %}
         </tr>
         {% endfor %}
+
+    </table>
     <input type="submit" value="Save">
-    </form>
-</table>
+</form>
 
 <br>
 <button class="collapseField" title="Want a timetable that suits you? Please fill out the survey!" id="survey">Survey
