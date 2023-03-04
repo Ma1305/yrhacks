@@ -26,21 +26,6 @@ function update() {
   } else if(block <= 1 && type == "rep") {
     table.rows[block + 16].cells[grade].innerHTML = code;
   }
-  ans = []
-  for(var i=0; i<18; i++) {
-    tmp = []
-    for(var j=0; j<4; j++) {
-      if(j != 0 && j != 1 && j != 10 && j != 13 && j != 16)
-        tmp.push(table.rows[i].cells[j].innerHTML);
-    }
-    ans.push(tmp);
-  }
-  let xhr = new XMLHttpRequest();
-  let url = "/course_selection";
-  xhr.open("POST", url, true);
-  xhr.setRequestHeader("Content-Type", "application/json");
-  var data = JSON.stringify({ "ans": ans });
-  xhr.send(data);
 }
 
 function reset() {
