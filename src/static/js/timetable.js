@@ -26,6 +26,21 @@ function update() {
   } else if(block <= 1 && type == "rep") {
     table.rows[block + 16].cells[grade].innerHTML = code;
   }
+  ans = []
+  for(var i=0; i<18; i++) {
+    tmp = []
+    for(var j=0; j<4; j++) {
+      if(j != 0 && j != 1 && j != 10 && j != 13 && j != 16)
+        tmp.push(table.rows[i].cells[j].innerHTML);
+    }
+    ans.push(tmp);
+  }
+  let xhr = new XMLHttpRequest();
+  let url = "/course_selection";
+  xhr.open("POST", url, true);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  var data = JSON.stringify({ "ans": ans });
+  xhr.send(data);
 }
 
 function reset() {
@@ -63,7 +78,7 @@ function standard() {
   table.rows[4].cells[0].innerHTML = "Science Gr.9 (SNC1D)";
   table.rows[4].cells[1].innerHTML = "Science Gr.10 (SNC2D)";
   table.rows[5].cells[0].innerHTML = "Issues in Canadian Geography Gr.9 (CGC1D)";
-  table.rows[5].cells[1].innerHTML = "Canadian History since World War I Gr.10 (CHC2D)";
+  table.rows[5].cells[1].innerHTML = "Canadian History Since World War I Gr.10 (CHC2D)";
   table.rows[6].cells[0].innerHTML = "Core French Gr.9 (FSF1D)";
   table.rows[6].cells[1].innerHTML = "Civics and Citizenship Gr.10 (CHV2O)";
   table.rows[7].cells[0].innerHTML = "Healthy Active Living Education Gr.9 (PPL1O)";
@@ -348,3 +363,33 @@ let coursetype = [
   ["Exploring Technologies Gr.9 (TIJ1O)", "Communications Technology Gr.10 (TGJ2O)", "Communications Technology Gr.11 (TGJ3M)", "Communications Technology: Broadcast and Print Production Gr.11 (TGJ3O)", "Communications Technology Gr.12 (TGJ4M)", "Information and Communication Technology in Business Gr.9 (BTT1O)"],
   ["Exploring Technologies Gr.9 (TIJ1O)", "Construction Technology Gr.10 (TCJ2O)", "Construction Engineering Technology Gr.11 (TCJ3C)", "Construction Engineering Technology Gr.12 (TCJ4C)", "Technological Design Gr.10 (TDJ2O)", "Technological Design Gr.11 (TDJ3M)", "Technological Design Gr.12 (TDJ4M)", "Transportation Technology Gr.10 (TTJ2O)", "Transportation Technology Gr.11 (TTJ3C)", "Transportation Technology Gr.12 (TTJ4C)"],
 ]
+
+// let adj = [
+//   [-1, 0, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 75, 75, 100, 100, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 1],
+//   [0, -1, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000, 500, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 5, 1],
+//   [0, 0, -1, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 55, 55, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 0x3f3f3f3f3f],
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, -1, 0, 0, 0, 5000, 5000, 0, 125, 125, 0x3f3f3f3f3f, 50000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 5, 500, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000],
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, -1, 0, 0, 5000, 5000, 0, 125, 125, 0x3f3f3f3f3f, 50000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 5, 500, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000],
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, 0, -1, 0, 5000, 5000, 0, 125, 125, 0x3f3f3f3f3f, 50000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 5, 500, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000],
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, 0, 0, -1, 5000, 5000, 0, 125, 125, 0x3f3f3f3f3f, 50000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 5, 500, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000],
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000, 1000, 1000, -1, 0, 0, 1000, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 5, 500, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f],
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000, 1000, 1000, 0, -1, 0, 1000, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 5, 500, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f],
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, 0, 0, 0, 0, 0, -1, 125, 125, 0x3f3f3f3f3f, 50000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 5, 500, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 1000],
+//   [50, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, -1, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [50, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, -1, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f,0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, -1, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 10, 10, 5, 5, 5, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1, 1]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f,0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, -1, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 10, 10, 5, 5, 5, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1, 1]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, -1, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 20, 0x3f3f3f3f3f, 20, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 15, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, -1, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 20, 0x3f3f3f3f3f, 20, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 5, 5, 5, 5, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 5, 0x3f3f3f3f3f,0x3f3f3f3f3f, 1, 1, 0x3f3f3f3f3f, 1000, -1, 0, 1, 5, 10, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 10, 10]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 5, 5, 5, 5, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 5, 0x3f3f3f3f3f,0x3f3f3f3f3f, 1, 1, 0x3f3f3f3f3f, 1000, 0, -1, 1, 5, 10, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 10, 10]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f,0x3f3f3f3f3f, 1, 50, 0x3f3f3f3f3f, 100, 1, 5, -1, 0, 0, 0x3f3f3f3f3f, 10, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 500, 100]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f,0x3f3f3f3f3f, 1, 50, 0x3f3f3f3f3f, 100, 1, 5, 0, -1, 0, 0x3f3f3f3f3f, 10, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 500, 100]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f,0x3f3f3f3f3f, 1, 50, 0x3f3f3f3f3f, 100, 1, 5, 0, 0, -1, 0x3f3f3f3f3f, 10, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 500, 100]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 15, 0x3f3f3f3f3f, 1000, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, -1, 0, 0, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 15, 0x3f3f3f3f3f, 1000, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 50, 50, 50, 0, -1, 0, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 15, 0x3f3f3f3f3f, 1000, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, 0, -1, 0, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 1000, 15, 0x3f3f3f3f3f, 1000, 1000, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, 0, 0, -1, 0x3f3f3f3f3f, 0x3f3f3f3f3f]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f,0x3f3f3f3f3f, 0x3f3f3f3f3f 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 10, 10, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 500, 0x3f3f3f3f3f, 100, 100, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, -1, 0]
+//   [0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f,0x3f3f3f3f3f, 0x3f3f3f3f3f 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 10, 10, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 500, 0x3f3f3f3f3f, 100, 100, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0x3f3f3f3f3f, 0, -1]
+// ]
