@@ -253,28 +253,29 @@ def course_selection():
             for j in range(4):
                 # Normal courses
                 if i < 10:
-                    courses[r].append(f"Course {int(i/4)}")
-                elif i == 10:
+                    courses[r].append(f"Course {i}")
+                elif i == 10 and j == 0:
                     courses.append([])
                     r += 1
 
                 # Summer courses
                 elif i < 13:
-                    courses[r].append(f"Summer Course {int(i/4)}")
-                elif i == 13:
+                    courses[r].append(f"Summer Course {i}")
+
+                elif i == 13 and j == 0:
                     courses.append([])
                     r += 1
 
                 # Night courses
                 elif i < 16:
-                    courses[r].append(f"Night Course {int(i/4)}")
-                elif i == 13:
+                    courses[r].append(f"Night Course {i}")
+                elif i == 13 and j == 0:
                     courses.append([])
                     r += 1
 
                 # Repertoire courses
                 else:
-                    courses[r].append(f"Repertoire Course {int(i / 4)}")
+                    courses[r].append(f"Repertoire Course {i}")
 
     logging.info(f"The following courses are begin passed to time table {str(courses)}")
     if request.method == "GET":
