@@ -287,6 +287,9 @@ def course_selection():
     logging.info(f"The following courses are begin passed to time table {str(courses)}")
     if request.method == "GET":
         return render_template("timetable.html", course=courses, range=range)
+    
+    logging.info(request.form)
+    logging.info(request.data)
 
     # Reached using POST
     offset = 16
