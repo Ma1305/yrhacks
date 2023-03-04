@@ -3,7 +3,21 @@
 {% block title %}Login{% endblock %}
 {% block active %}Login{% endblock %}
 
+{% block preload %}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&display=swap');
+
+h1{
+  font-family: Poppins;
+}
+
+#login-portal{
+  font-family: Cabin;
+}
+</style>
+{% endblock %}
 {% block main %}
+        
 <div id="login-portal">
     <h1>Login</h1>
     <form method="post">
@@ -19,4 +33,5 @@
         <input type="submit" value="Submit">
     </form>
 </div>
+
 {% endblock %}

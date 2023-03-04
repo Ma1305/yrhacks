@@ -16,7 +16,7 @@
     <option value="dayschool">Day School</option>
     <option value="summerschool">Summer School</option>
     <option value="nightschool">Night School</option>
-    <option value="rep">Repertoire</option>
+    <option value="rep">After School</option>
   </select>
   <br>
   <label>Grade:</label>
@@ -277,104 +277,6 @@
   <button onclick="standard()">Standard</button>
   <button onclick="update()">Update</button>
   <br><br>
-<!--   <table border="2" id="table">
-    <tr>
-      <td align="center" height="50" width="150"><b>Grade 9</b></td>
-      <td align="center" height="50" width="150"><b>Grade 10</b></td>
-      <td align="center" height="50" width="150"><b>Grade 11</b></td>
-      <td align="center" height="50" width="150"><b>Grade 12</b></td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center" height="50"><b>Day School</b></td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 1</td>
-      <td align="center" height="50" width="150">Course 1</td>
-      <td align="center" height="50" width="150">Course 1</td>
-      <td align="center" height="50" width="150">Course 1</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 2</td>
-      <td align="center" height="50" width="150">Course 2</td>
-      <td align="center" height="50" width="150">Course 2</td>
-      <td align="center" height="50" width="150">Course 2</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 3</td>
-      <td align="center" height="50" width="150">Course 3</td>
-      <td align="center" height="50" width="150">Course 3</td>
-      <td align="center" height="50" width="150">Course 3</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 4</td>
-      <td align="center" height="50" width="150">Course 4</td>
-      <td align="center" height="50" width="150">Course 4</td>
-      <td align="center" height="50" width="150">Course 4</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 5</td>
-      <td align="center" height="50" width="150">Course 5</td>
-      <td align="center" height="50" width="150">Course 5</td>
-      <td align="center" height="50" width="150">Course 5</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 6</td>
-      <td align="center" height="50" width="150">Course 6</td>
-      <td align="center" height="50" width="150">Course 6</td>
-      <td align="center" height="50" width="150">Course 6</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 7</td>
-      <td align="center" height="50" width="150">Course 7</td>
-      <td align="center" height="50" width="150">Course 7</td>
-      <td align="center" height="50" width="150">Course 7</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Course 8</td>
-      <td align="center" height="50" width="150">Course 8</td>
-      <td align="center" height="50" width="150">Course 8</td>
-      <td align="center" height="50" width="150">Course 8</td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center" height="50"><b>Summer School</b></td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Summer School 1</td>
-      <td align="center" height="50" width="150">Summer School 1</td>
-      <td align="center" height="50" width="150">Summer School 1</td>
-      <td align="center" height="50" width="150">Summer School 1</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Summer School 2</td>
-      <td align="center" height="50" width="150">Summer School 2</td>
-      <td align="center" height="50" width="150">Summer School 2</td>
-      <td align="center" height="50" width="150">Summer School 2</td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center" height="50"><b>Night School</b></td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Night School 1</td>
-      <td align="center" height="50" width="150">Night School 1</td>
-      <td align="center" height="50" width="150">Night School 1</td>
-      <td align="center" height="50" width="150">Night School 1</td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Night School 2</td>
-      <td align="center" height="50" width="150">Night School 2</td>
-      <td align="center" height="50" width="150">Night School 2</td>
-      <td align="center" height="50" width="150">Night School 2</td>
-    </tr>
-    <tr>
-      <td colspan="4" align="center" height="50"><b>Repertoire</b></td>
-    </tr>
-    <tr>
-      <td align="center" height="50" width="150">Repertoire 1</td>
-      <td align="center" height="50" width="150">Repertoire 1</td>
-      <td align="center" height="50" width="150">Repertoire 1</td>
-      <td align="center" height="50" width="150">Repertoire 1</td>
-    </tr>
-  </table> -->
   <form method="post", action="/course_selection">
     <table border="2" id="table">
     {% for i in range(18) %}
@@ -395,7 +297,7 @@
         {% elif i == 13 and j == 0 %}
         <td colspan="4" align="center" height="50"><b>Night School</b></td>
         {% elif i == 16 and j == 0 %}
-        <td colspan="4" align="center" height="50"><b>Repertoire</b></td>
+        <td colspan="4" align="center" height="50"><b>After School</b></td>
         {% elif i != 1 and i != 10 and i != 13 and i != 16 %}
         <td name={{i*4+j}} align="center" height="50">{{course[i][j]}}</td>
         {% endif %}
