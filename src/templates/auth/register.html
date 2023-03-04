@@ -2,7 +2,50 @@
 
 {% block title %}Login{% endblock %}
 {% block active %}Login{% endblock %}
+{% block preload %}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Comfortaa&family=Fredoka+One&family=Josefin+Sans&family=Poppins:wght@500&family=Roboto&family=Source+Sans+Pro:wght@300;400&family=Tilt+Warp&display=swap');
 
+h1{
+  font-family: Poppins;
+}
+
+#registration-portal{
+  font-family: Cabin;
+}
+
+.submit-button{
+   width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.submit-button{
+  font-family: Cabin;
+  font-size: 15px;
+  background: #293462;
+  background: linear-gradient(0deg, #293462 0%, #405198 100%);
+  border: none;
+}
+.submit-button:hover {
+   background: rgb(0,3,255);
+background: linear-gradient(0deg, #e9567d 0%, #a9163e 100%);
+}
+</style>
+{% endblock %}
 {% block main %}
 <div id="registration-portal">
     <h1>Create a New Account</h1>
@@ -27,7 +70,8 @@
         <br>
         <input type="password" id="password-confirmation" name="register-password-confirmation" required>
         <br>
-        <input type="submit" value="Submit">
+        <br>
+        <input class = "submit-button" type="submit" value="Submit">
     </form>
 </div>
 {% endblock %}
