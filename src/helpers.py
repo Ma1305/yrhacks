@@ -1,5 +1,8 @@
 from flask import redirect, session, request, flash
+from flask_mail import Message
 from functools import wraps
+from datetime import datetime, timedelta
+import re
 
 
 def login_required(f):
@@ -32,3 +35,24 @@ def check_login(rows):
 
     # if everything is fine
     return 1
+
+
+def verify_text(text):
+    """
+    Check if text only contains A-Z, a-z, 0-9, underscores, and dashes
+    """
+    return bool(re.match(r'^[\w\-]+$', text))
+
+
+def send_email(subject, sender, recipients, text, bcc=None):
+    from app import mail
+    message = Message(subject, sender=sender, recipients=recipients, html=text, bcc=bcc)
+    mail.send(message)
+
+
+def create_jwt(data, secret_key, time=1800):
+    """
+    Creates a JWT token containing data and encrypted using secret_key
+    """
+    data['expiration'] = (datetime.utcnow() + timedelta(seconds=time)).isoformat()
+    return jwt.encode(data, secret_key, algorithm='HS256')
