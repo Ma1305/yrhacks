@@ -916,3 +916,372 @@ with app.app_context(). See the documentation for more information.
 2023-03-04 05:09:45,529 DEBUG root MainThread : Settings validation: Email credentials valid.
 2023-03-04 05:09:45,544 WARNING werkzeug MainThread :  * Debugger is active!
 2023-03-04 05:09:45,553 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:20:22,742 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:20:22,756 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:20:22,756 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:20:22,757 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:20:24,928 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:20:24,940 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:20:24,951 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:20:25,109 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:20:25,121 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:20:25,124 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,126 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,130 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,132 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,132 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,135 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,137 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,138 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:25,139 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:20:25] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:51,821 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:20:51,833 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:20:51,833 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:20:51,835 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:20:53,982 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:20:53,993 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:20:54,000 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:20:54,160 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:20:54,171 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:20:54,176 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,178 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,180 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,180 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,181 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,181 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,189 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,190 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:20:54,191 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:20:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:18,025 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:21:18,038 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:21:18,038 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:21:18,039 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:21:19,998 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:21:20,011 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:21:20,018 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:21:21,443 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:21:21,457 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,457 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,461 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,462 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:21:21,465 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,471 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,471 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,473 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,473 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:21:21,475 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:21:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:23:47,490 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:23:47,504 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:23:47,504 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:23:47,506 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:23:49,454 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:23:49,465 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:23:49,473 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:24:08,517 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:24:08] "GET / HTTP/1.1" 200 -
+2023-03-04 05:24:09,711 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:24:09,730 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/showdown.min.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,733 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:24:09,734 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/nav.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,735 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,735 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:24:09,737 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/convertMD.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,750 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/dateConvert.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,750 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/seeMore.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,751 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,751 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "GET /static/js/newPagination.js HTTP/1.1" 200 -
+2023-03-04 05:24:09,788 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 05:24:09] "[33mGET /static/ctfLogo.png HTTP/1.1[0m" 404 -
+2023-03-04 05:24:20,965 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/Mar/2023 05:24:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:24:20,966 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 05:24:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:24:21,024 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/Mar/2023 05:24:21] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:24:21,024 INFO werkzeug Thread-18 : 127.0.0.1 - - [04/Mar/2023 05:24:21] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:24:21,026 INFO werkzeug Thread-19 : 127.0.0.1 - - [04/Mar/2023 05:24:21] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:24:21,032 INFO werkzeug Thread-20 : 127.0.0.1 - - [04/Mar/2023 05:24:21] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:24:37,051 INFO werkzeug Thread-21 : 127.0.0.1 - - [04/Mar/2023 05:24:37] "GET / HTTP/1.1" 200 -
+2023-03-04 05:26:43,057 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:26:43,071 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:26:43,071 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:26:43,073 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:26:45,097 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:26:45,107 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:26:45,116 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:26:50,367 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:26:50,387 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:26:50,391 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,391 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:26:50,398 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,406 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,408 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,410 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,412 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,415 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,416 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:50,428 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:50,429 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:50,439 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:50,470 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/Mar/2023 05:26:50] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:56,514 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:26:56,535 INFO werkzeug Thread-18 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,536 INFO werkzeug Thread-19 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,543 INFO werkzeug Thread-21 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,544 INFO werkzeug Thread-20 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,553 INFO werkzeug Thread-23 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,554 INFO werkzeug Thread-22 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,557 INFO werkzeug Thread-27 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,558 INFO werkzeug Thread-25 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,558 INFO werkzeug Thread-26 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,559 INFO werkzeug Thread-24 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:56,567 INFO werkzeug Thread-28 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:56,599 INFO werkzeug Thread-30 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:56,601 INFO werkzeug Thread-29 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:56,602 INFO werkzeug Thread-31 : 127.0.0.1 - - [04/Mar/2023 05:26:56] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:57,876 INFO werkzeug Thread-32 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:26:57,899 INFO werkzeug Thread-33 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,906 INFO werkzeug Thread-36 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,907 INFO werkzeug Thread-34 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,910 INFO werkzeug Thread-37 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,912 INFO werkzeug Thread-38 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,913 INFO werkzeug Thread-35 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,925 INFO werkzeug Thread-39 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,929 INFO werkzeug Thread-40 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,930 INFO werkzeug Thread-41 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,933 INFO werkzeug Thread-43 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:57,934 INFO werkzeug Thread-42 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:57,950 INFO werkzeug Thread-45 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:57,950 INFO werkzeug Thread-44 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:57,954 INFO werkzeug Thread-46 : 127.0.0.1 - - [04/Mar/2023 05:26:57] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:58,565 INFO werkzeug Thread-47 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:26:58,580 INFO werkzeug Thread-48 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,597 INFO werkzeug Thread-52 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,599 INFO werkzeug Thread-50 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,601 INFO werkzeug Thread-49 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,605 INFO werkzeug Thread-51 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,606 INFO werkzeug Thread-53 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,614 INFO werkzeug Thread-54 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,621 INFO werkzeug Thread-55 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,625 INFO werkzeug Thread-56 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,627 INFO werkzeug Thread-57 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:26:58,628 INFO werkzeug Thread-58 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:58,630 INFO werkzeug Thread-59 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:58,632 INFO werkzeug Thread-60 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:26:58,637 INFO werkzeug Thread-61 : 127.0.0.1 - - [04/Mar/2023 05:26:58] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:27:23,008 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:27:23,019 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:27:23,020 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:27:23,021 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:27:25,065 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:27:25,077 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:27:25,086 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:27:32,286 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:27:32,303 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:27:32,313 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,319 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,322 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,353 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,371 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,383 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,407 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,430 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,432 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:27:32,434 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:27:32,434 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:27:32,436 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:27:32,453 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/Mar/2023 05:27:32] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:30:46,525 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:30:46,541 INFO werkzeug Thread-18 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,559 INFO werkzeug Thread-21 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,561 INFO werkzeug Thread-24 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,562 INFO werkzeug Thread-19 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,563 INFO werkzeug Thread-20 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,564 INFO werkzeug Thread-22 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,566 INFO werkzeug Thread-23 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,585 INFO werkzeug Thread-26 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,586 INFO werkzeug Thread-25 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,588 INFO werkzeug Thread-28 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:30:46,592 INFO werkzeug Thread-27 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:30:46,594 INFO werkzeug Thread-29 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:30:46,596 INFO werkzeug Thread-30 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:30:46,608 INFO werkzeug Thread-31 : 127.0.0.1 - - [04/Mar/2023 05:30:46] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:30:57,739 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:30:57,751 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:30:57,751 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:30:57,753 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:30:59,958 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:30:59,969 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:30:59,982 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:31:00,875 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:31:00,895 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,903 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,904 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,905 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,908 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,909 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,916 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,920 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,922 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,924 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:00,928 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:00,934 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:00,951 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:00,952 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 05:31:00] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:18,719 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:31:18,731 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:31:18,731 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:31:18,733 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:31:20,681 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:31:20,693 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:31:20,700 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:31:24,093 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:31:24,105 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,125 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,126 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,130 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,131 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,132 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,136 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,149 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,151 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:24,153 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,155 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:24,158 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:24,159 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:24,164 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/Mar/2023 05:31:24] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:27,563 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:31:27,580 INFO werkzeug Thread-18 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,600 INFO werkzeug Thread-23 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,602 INFO werkzeug Thread-20 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,603 INFO werkzeug Thread-22 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,604 INFO werkzeug Thread-19 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,605 INFO werkzeug Thread-21 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,611 INFO werkzeug Thread-24 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,625 INFO werkzeug Thread-26 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,626 INFO werkzeug Thread-27 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,628 INFO werkzeug Thread-25 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:31:27,638 INFO werkzeug Thread-28 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:27,661 INFO werkzeug Thread-31 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:27,662 INFO werkzeug Thread-29 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:31:27,663 INFO werkzeug Thread-30 : 127.0.0.1 - - [04/Mar/2023 05:31:27] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:31,843 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:33:31,857 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:33:31,858 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:33:31,859 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:33:33,993 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:33:34,006 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:33:34,016 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:33:36,452 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:33:36,464 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:36,468 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:36,469 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:33:36,474 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:36,475 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:36,478 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:36,478 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:33:36,479 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:36,480 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:36,482 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:33:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,242 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:33:40,256 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,272 INFO werkzeug Thread-19 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,276 INFO werkzeug Thread-20 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,279 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,280 INFO werkzeug Thread-18 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,283 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,285 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,294 INFO werkzeug Thread-21 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,295 INFO werkzeug Thread-24 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:40,297 INFO werkzeug Thread-22 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,298 INFO werkzeug Thread-23 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:33:40,308 INFO werkzeug Thread-26 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:40,309 INFO werkzeug Thread-25 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:40,320 INFO werkzeug Thread-27 : 127.0.0.1 - - [04/Mar/2023 05:33:40] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:45,989 INFO werkzeug Thread-28 : 127.0.0.1 - - [04/Mar/2023 05:33:45] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:33:46,016 INFO werkzeug Thread-29 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:33:46,022 INFO werkzeug Thread-30 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:33:46,023 INFO werkzeug Thread-32 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/showdown.min.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,026 INFO werkzeug Thread-31 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/nav.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,027 INFO werkzeug Thread-34 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/convertMD.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,030 INFO werkzeug Thread-33 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,044 INFO werkzeug Thread-35 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/seeMore.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,047 INFO werkzeug Thread-36 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/newPagination.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,050 INFO werkzeug Thread-38 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,051 INFO werkzeug Thread-37 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/js/dateConvert.js HTTP/1.1" 200 -
+2023-03-04 05:33:46,098 INFO werkzeug Thread-39 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:46,105 INFO werkzeug Thread-40 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:46,106 INFO werkzeug Thread-41 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:46,137 INFO werkzeug Thread-42 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:46,976 INFO werkzeug Thread-43 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:33:46,992 INFO werkzeug Thread-44 : 127.0.0.1 - - [04/Mar/2023 05:33:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:33:47,010 INFO werkzeug Thread-45 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:33:47,014 INFO werkzeug Thread-46 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/nav.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,015 INFO werkzeug Thread-47 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/showdown.min.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,016 INFO werkzeug Thread-48 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,019 INFO werkzeug Thread-49 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/convertMD.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,022 INFO werkzeug Thread-50 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/seeMore.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,033 INFO werkzeug Thread-51 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/newPagination.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,035 INFO werkzeug Thread-53 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,038 INFO werkzeug Thread-52 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "GET /static/js/dateConvert.js HTTP/1.1" 200 -
+2023-03-04 05:33:47,046 INFO werkzeug Thread-54 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:47,078 INFO werkzeug Thread-56 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:47,079 INFO werkzeug Thread-55 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:33:47,085 INFO werkzeug Thread-57 : 127.0.0.1 - - [04/Mar/2023 05:33:47] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:36:55,036 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:36:55,050 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:36:55,050 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:36:55,052 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:36:57,204 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:36:57,215 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:36:57,223 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:36:59,548 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:36:59,576 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:36:59,584 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2023-03-04 05:36:59,585 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/showdown.min.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,587 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,591 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/convertMD.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,596 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/nav.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,611 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/seeMore.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,614 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/newPagination.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,616 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/dateConvert.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,619 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2023-03-04 05:36:59,636 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2023-03-04 05:36:59,653 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "[33mGET /static/js/showdown.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:36:59,655 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "[33mGET /static/js/purify.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:36:59,664 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/Mar/2023 05:36:59] "[33mGET /static/js/bootstrap.bundle.min.js.map HTTP/1.1[0m" 404 -
+2023-03-04 05:37:09,949 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:37:09,966 INFO werkzeug Thread-21 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,967 INFO werkzeug Thread-22 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,967 INFO werkzeug Thread-20 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,968 INFO werkzeug Thread-19 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,969 INFO werkzeug Thread-18 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:37:09,972 INFO werkzeug Thread-23 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,974 INFO werkzeug Thread-24 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,977 INFO werkzeug Thread-26 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,977 INFO werkzeug Thread-25 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:09,978 INFO werkzeug Thread-27 : 127.0.0.1 - - [04/Mar/2023 05:37:09] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:45,409 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:37:45,421 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-03-04 05:37:45,422 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-03-04 05:37:45,423 INFO werkzeug MainThread :  * Restarting with stat
+2023-03-04 05:37:47,557 DEBUG root MainThread : Settings validation: Email credentials valid.
+2023-03-04 05:37:47,570 WARNING werkzeug MainThread :  * Debugger is active!
+2023-03-04 05:37:47,577 INFO werkzeug MainThread :  * Debugger PIN: 101-274-126
+2023-03-04 05:37:49,696 INFO werkzeug Thread-2 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "GET /login HTTP/1.1" 200 -
+2023-03-04 05:37:49,708 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,712 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,715 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2023-03-04 05:37:49,716 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/nav.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,718 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/showdown.min.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,720 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/convertMD.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,722 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/newPagination.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,725 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/dateConvert.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,725 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/seeMore.js HTTP/1.1[0m" 304 -
+2023-03-04 05:37:49,726 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/Mar/2023 05:37:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
