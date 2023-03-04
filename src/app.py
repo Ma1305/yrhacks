@@ -41,7 +41,7 @@ def inject_user():
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("navbar.html", session=session)
+    return render_template("navbar.html")
 
 
 @app.route("/login", methods=["GET", "POST"])

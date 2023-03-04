@@ -16,7 +16,7 @@ def login_required(f):
 
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if session.get("student-number") is None:
+        if session.get("student_number") is None:
             return redirect("/login?next=" + request.path)
         return f(*args, **kwargs)
 
