@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <h1>Timetable</h1>
+  <h3>Course Update</h3><br>
+  <label>Course Type:</label>
+  <select id="coursetype" style="font-size: 16px;">
+    <option value="dayschool">Day School</option>
+    <option value="summerschool">Summer School</option>
+    <option value="nightschool">Night School</option>
+    <option value="rep">Repertoire</option>
+  </select>
+  <br>
+  <label>Course Block:</label>
+  <select id="courseblock" style="font-size: 16px;">
+    <option value="Block1">Block 1</option>
+    <option value="Block2">Block 2</option>
+    <option value="Block3">Block 3</option>
+    <option value="Block4">Block 4</option>
+    <option value="Block5">Block 5</option>
+    <option value="Block6">Block 6</option>
+    <option value="Block7">Block 7</option>
+    <option value="Block8">Block 8</option>
+  </select>
+  <br>
+  <label>New Course Code:</label>
+  <input type="text" id="newcourse" placeholder="MCV4U">
+  <br>
+  <button>Update</button>
+  <br><br>
+  <table border="2">
+    <tr>
+      <td align="center" height="50" width="150"><b>Grade 9</b></td>
+      <td align="center" height="50" width="150"><b>Grade 10</b></td>
+      <td align="center" height="50" width="150"><b>Grade 11</b></td>
+      <td align="center" height="50" width="150"><b>Grade 12</b></td>
+    </tr>
+    <tr>
+      <td colspan="4" align="center" height="50"><b>Day School</b></td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 1</td>
+      <td align="center" height="50" width="150">Course 1</td>
+      <td align="center" height="50" width="150">Course 1</td>
+      <td align="center" height="50" width="150">Course 1</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 2</td>
+      <td align="center" height="50" width="150">Course 2</td>
+      <td align="center" height="50" width="150">Course 2</td>
+      <td align="center" height="50" width="150">Course 2</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 3</td>
+      <td align="center" height="50" width="150">Course 3</td>
+      <td align="center" height="50" width="150">Course 3</td>
+      <td align="center" height="50" width="150">Course 3</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 4</td>
+      <td align="center" height="50" width="150">Course 4</td>
+      <td align="center" height="50" width="150">Course 4</td>
+      <td align="center" height="50" width="150">Course 4</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 5</td>
+      <td align="center" height="50" width="150">Course 5</td>
+      <td align="center" height="50" width="150">Course 5</td>
+      <td align="center" height="50" width="150">Course 5</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 6</td>
+      <td align="center" height="50" width="150">Course 6</td>
+      <td align="center" height="50" width="150">Course 6</td>
+      <td align="center" height="50" width="150">Course 6</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 7</td>
+      <td align="center" height="50" width="150">Course 7</td>
+      <td align="center" height="50" width="150">Course 7</td>
+      <td align="center" height="50" width="150">Course 7</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Course 8</td>
+      <td align="center" height="50" width="150">Course 8</td>
+      <td align="center" height="50" width="150">Course 8</td>
+      <td align="center" height="50" width="150">Course 8</td>
+    </tr>
+    <tr>
+      <td colspan="4" align="center" height="50"><b>Summer School</b></td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Summer School 1</td>
+      <td align="center" height="50" width="150">Summer School 1</td>
+      <td align="center" height="50" width="150">Summer School 1</td>
+      <td align="center" height="50" width="150">Summer School 1</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Summer School 2</td>
+      <td align="center" height="50" width="150">Summer School 2</td>
+      <td align="center" height="50" width="150">Summer School 2</td>
+      <td align="center" height="50" width="150">Summer School 2</td>
+    </tr>
+    <tr>
+      <td colspan="4" align="center" height="50"><b>Night School</b></td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Night School 1</td>
+      <td align="center" height="50" width="150">Night School 1</td>
+      <td align="center" height="50" width="150">Night School 1</td>
+      <td align="center" height="50" width="150">Night School 1</td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Night School 2</td>
+      <td align="center" height="50" width="150">Night School 2</td>
+      <td align="center" height="50" width="150">Night School 2</td>
+      <td align="center" height="50" width="150">Night School 2</td>
+    </tr>
+    <tr>
+      <td colspan="4" align="center" height="50"><b>Repertoire</b></td>
+    </tr>
+    <tr>
+      <td align="center" height="50" width="150">Repertoire 1</td>
+      <td align="center" height="50" width="150">Repertoire 1</td>
+      <td align="center" height="50" width="150">Repertoire 1</td>
+      <td align="center" height="50" width="150">Repertoire 1</td>
+    </tr>
+  </table>
+  <br>
+  <button class="collapseField" title="Want a timetable that suits you? Please fill out the survey!" id="survey">Survey</button>
+  <div class="surveyQuestion" id="Question">
+    <label style="font-size: 20px;">1. What grade are you entering in the following year?</label>
+    <select id="question1" style="font-size: 16px;">
+      <option value="gr9">Grade 9</option>
+      <option value="gr10">Grade 10</option>
+      <option value="gr11">Grade 11</option>
+      <option value="gr12">Grade 12</option>
+    </select>
+    <br>
+    <label style="font-size: 20px;">2. Select your top preferred field of study.</label>
+    <select id="question2" style="font-size: 16px;">
+      <optgroup label="Arts">
+        <option value="art">Art</option>
+        <option value="drama">Drama</option>
+        <option value="music">Music</option>
+        <option value="npart">No Preference</option>
+      </optgroup>
+      <optgroup label="Business Studies">
+        <option value="marketing">Marketing</option>
+        <option value="accounting">Accounting</option>
+        <option value="entrepreneurship">Entrepreneurship</option>
+        <option value="management">Management</option>  
+        <option value="npbusinessstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Canadian and World Studies">
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+        <option value="economics">Economics</option>
+        <option value="npcanadianandworldstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Languages">
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="nplanguages">No Preference</option>
+      </optgroup>
+      <optgroup label="Computer Studies">
+        <option value="engineering">Engineering</option>
+        <option value="computerscience">Computer Science</option>
+        <option value="npcomputerstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Health and Physical Education">
+        <option value="fitness">Fitness</option>
+        <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
+        <option value="nphealthandphysicaleducation">No Preference</option>
+      </optgroup>
+      <optgroup label="Mathematics">
+        <option value="algebraandfunctions">Algebra & Functions</option>
+        <option value="datamanagement">Data Management</option>
+        <option value="npmathematics">No Preference</option>
+      </optgroup>
+      <optgroup label="Science">
+        <option value="physics">Physics</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="biology">Biology</option>
+        <option value="npscience">No Preference</option>
+      </optgroup>
+      <optgroup label="Social Sciences and Humanities">
+        <option value="familystudies">Family Studies</option>
+        <option value="foodandnutrition">Food and Nutrition</option>
+        <option value="philosophy">Philosophy</option>
+        <option value="psychology">Psychology</option>
+        <option value="npsocialstudiesandhumanities">No Preference</option>
+      </optgroup>
+      <optgroup label="Technological Education">
+        <option value="communicationstechnology">Communications Technology</option>
+        <option value="technologicaldesign">Technological Design</option>
+        <option value="nptechnologicalstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="No Preference">
+        <option value="npnopreference">No Preference</option>
+      </optgroup>
+    </select>
+    <br>
+    <label style="font-size: 20px;">3. Enter your second preferred field of study.</label>
+    <select id="question3" style="font-size: 16px;">
+      <optgroup label="Arts">
+        <option value="art">Art</option>
+        <option value="drama">Drama</option>
+        <option value="music">Music</option>
+        <option value="npart">No Preference</option>
+      </optgroup>
+      <optgroup label="Business Studies">
+        <option value="marketing">Marketing</option>
+        <option value="accounting">Accounting</option>
+        <option value="entrepreneurship">Entrepreneurship</option>
+        <option value="management">Management</option>  
+        <option value="npbusinessstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Canadian and World Studies">
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+        <option value="economics">Economics</option>
+        <option value="npcanadianandworldstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Languages">
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="nplanguages">No Preference</option>
+      </optgroup>
+      <optgroup label="Computer Studies">
+        <option value="engineering">Engineering</option>
+        <option value="computerscience">Computer Science</option>
+        <option value="npcomputerstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Health and Physical Education">
+        <option value="fitness">Fitness</option>
+        <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
+        <option value="nphealthandphysicaleducation">No Preference</option>
+      </optgroup>
+      <optgroup label="Mathematics">
+        <option value="algebraandfunctions">Algebra & Functions</option>
+        <option value="datamanagement">Data Management</option>
+        <option value="npmathematics">No Preference</option>
+      </optgroup>
+      <optgroup label="Science">
+        <option value="physics">Physics</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="biology">Biology</option>
+        <option value="npscience">No Preference</option>
+      </optgroup>
+      <optgroup label="Social Sciences and Humanities">
+        <option value="familystudies">Family Studies</option>
+        <option value="foodandnutrition">Food and Nutrition</option>
+        <option value="philosophy">Philosophy</option>
+        <option value="psychology">Psychology</option>
+        <option value="npsocialstudiesandhumanities">No Preference</option>
+      </optgroup>
+      <optgroup label="Technological Education">
+        <option value="communicationstechnology">Communications Technology</option>
+        <option value="technologicaldesign">Technological Design</option>
+        <option value="nptechnologicalstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="No Preference">
+        <option value="npnopreference">No Preference</option>
+      </optgroup>
+    </select>
+    <br>
+    <label style="font-size: 20px;">4. Enter your third preferred field of study.</label>
+    <select id="question4" style="font-size: 16px;">
+      <optgroup label="Arts">
+        <option value="art">Art</option>
+        <option value="drama">Drama</option>
+        <option value="music">Music</option>
+        <option value="npart">No Preference</option>
+      </optgroup>
+      <optgroup label="Business Studies">
+        <option value="marketing">Marketing</option>
+        <option value="accounting">Accounting</option>
+        <option value="entrepreneurship">Entrepreneurship</option>
+        <option value="management">Management</option>  
+        <option value="npbusinessstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Canadian and World Studies">
+        <option value="geography">Geography</option>
+        <option value="history">History</option>
+        <option value="economics">Economics</option>
+        <option value="npcanadianandworldstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Languages">
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="nplanguages">No Preference</option>
+      </optgroup>
+      <optgroup label="Computer Studies">
+        <option value="engineering">Engineering</option>
+        <option value="computerscience">Computer Science</option>
+        <option value="npcomputerstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="Health and Physical Education">
+        <option value="fitness">Fitness</option>
+        <option value="healthyactivelivingeducation">Healthy Active Living Education</option>
+        <option value="nphealthandphysicaleducation">No Preference</option>
+      </optgroup>
+      <optgroup label="Mathematics">
+        <option value="algebraandfunctions">Algebra & Functions</option>
+        <option value="datamanagement">Data Management</option>
+        <option value="npmathematics">No Preference</option>
+      </optgroup>
+      <optgroup label="Science">
+        <option value="physics">Physics</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="biology">Biology</option>
+        <option value="npscience">No Preference</option>
+      </optgroup>
+      <optgroup label="Social Sciences and Humanities">
+        <option value="familystudies">Family Studies</option>
+        <option value="foodandnutrition">Food and Nutrition</option>
+        <option value="philosophy">Philosophy</option>
+        <option value="psychology">Psychology</option>
+        <option value="npsocialstudiesandhumanities">No Preference</option>
+      </optgroup>
+      <optgroup label="Technological Education">
+        <option value="communicationstechnology">Communications Technology</option>
+        <option value="technologicaldesign">Technological Design</option>
+        <option value="nptechnologicalstudies">No Preference</option>
+      </optgroup>
+      <optgroup label="No Preference">
+        <option value="npnopreference">No Preference</option>
+      </optgroup>
+    </select>
+    <br>
+    <label style="font-size: 20px;">5. Does your school offer AP (Advanced Placement) program? If yes, are you interested in enrolling in the program?</label>
+    <select id="question5" style="font-size: 16px;">
+      <option value="yesap">Yes</option>
+      <option value="noap">Not interested / Not offered</option>
+    </select>
+    <br>
+    <label style="font-size: 20px;">6. Select the preferred IB (International Baccalaureate) program type</label>
+    <select id="question6" style="font-size: 16px;">
+      <option value="hlib">Higher Level (HL)</option>
+      <option value="slib">Standard Level (SL)</option>
+      <option value="npib">No Preference</option>
+      <option value="noib">Not in IB / Not offered</option>
+    </select>
+    <br>
+    <label style="font-size: 20px;">7. Select your preferred pathway</label>
+    <select id="question7" style="font-size: 16px;">
+      <option value="unipathway">University</option>
+      <option value="collegepathway">College</option>
+      <option value="workplacepathway">Workplace</option>
+    </select>
+    <br>
+    <label style="font-size: 20px;">8. If you are going to Gr. 12 or above in the following year, how many spare do you wish to have?</label>
+    <select id="question8" style="font-size: 16px;">
+      <option value="zerospare">0</option>
+      <option value="onespare">1</option>
+      <option value="twospare">2</option>
+    </select>
+    <br>
+    <label style="font-size: 20px;">9. How many courses are you willing to fast-track (maximum)?</label>
+    <select id="question9" style="font-size: 16px;">
+      <option value="zerofast">0</option>
+      <option value="onefast">1</option>
+      <option value="twofast">2</option>
+      <option value="threefast">3</option>
+      <option value="fourfast">4</option>
+      <option value="fivefast">5</option>
+    </select>
+    <br>
+    <label style="font-size: 20px;">10. Are you planning to join the repertoire?</label>
+    <select id="question10" style="font-size: 16px;">
+      <option value="yesrep">Yes</option>
+      <option value="norep">No</option>
+    </select>
+    <br>
+  </div>
+  <br>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+</html>
