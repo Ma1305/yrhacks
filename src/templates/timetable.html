@@ -425,7 +425,7 @@
             {% elif i == 16 and j == 0 %}
             <td colspan="4" align="center" height="50"><b>After School</b></td>
             {% elif i != 1 and i != 10 and i != 13 and i != 16 %}
-            <td align="center" height="50"><input name={{i*4+j}} class="fake-input-field" value={{course[i][j]}}></td>
+            <td name={{i*4+j}} align="center" height="50">{{course[i][j]}}</td>
             {% endif %}
             {% endfor %}
         </tr>
